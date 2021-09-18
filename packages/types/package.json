@@ -1,0 +1,31 @@
+{
+  "name": "@lotusengine/types",
+  "version": "1.0.0",
+  "description": "LotusEngine TypeScript typings",
+  "keywords": [
+    "typescript",
+    "lotusengine"
+  ],
+  "homepage": "https://github.com/lotusengine/sdk/packages/types#readme",
+  "bugs": "https://github.com/lotusengine/lotusengine/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lotusengine/lotusengine.git"
+  },
+  "license": "MIT",
+  "author": "LotusEngine {https://lotusengine.com/)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc --build tsconfig.build.json",
+    "clean": "tsc --build tsconfig.build.json --clean",
+    "lint": "tsc --noEmit",
+    "wipe": "rimraf dist"
+  }
+}

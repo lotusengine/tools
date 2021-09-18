@@ -1,0 +1,1 @@
+export { ExtendedSchema } from 'fluent-json-schema'

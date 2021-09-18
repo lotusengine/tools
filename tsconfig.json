@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "rootDir": ".",
+    "baseUrl": "packages",
+    "paths": {
+      "@lotusengine/*": ["*/src"],
+      "constructs/*": ["./constructs/*"],
+      "schemas/*": ["./schemas/*"],
+      "types/*": ["./types/*"],
+      "sdk/*": ["./sdk/*"],
+      "cli/*": ["./cli/*"],
+      "core/*": ["./cli/*"],
+      "prettier/*": ["./cli/*"],
+      "eslint/*": ["./cli/*"]
+    },
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "removeComments": true,
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "incremental": true,
+    "resolveJsonModule": true
+  },
+  "include": ["./**/*.ts*"],
+  "exclude": ["dist"],
+  "ts-node": {
+    "transpileOnly": true,
+    // "transpiler": "ts-node/transpilers/swc-experimental",
+    "require": ["tsconfig-paths/register"]
+  }
+}

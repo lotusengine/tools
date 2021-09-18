@@ -1,0 +1,8 @@
+{
+  "extends": "../../tsconfig.json",
+  "references": [
+    { "path": "../types/tsconfig.build.json", "prepend": false },
+    { "path": "../core/tsconfig.build.json", "prepend": false },
+    { "path": "../schemas/tsconfig.build.json", "prepend": false }
+  ]
+}

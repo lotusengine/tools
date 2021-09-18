@@ -1,0 +1,40 @@
+{
+  "name": "@lotusengine/schemas",
+  "version": "1.0.0",
+  "description": "LotusEngine JSON schemas",
+  "keywords": [
+    "lotusengine",
+    "JSON",
+    "schema",
+    "jsonschema",
+    "json-schema"
+  ],
+  "homepage": "https://github.com/lotusengine/lotusengine#readme",
+  "bugs": "https://github.com/lotusengine/lotusengine/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lotusengine/lotusengine.git"
+  },
+  "license": "MIT",
+  "author": "LotusEngine {https://lotusengine.com/)",
+  "main": "dist/index.ts",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc --build tsconfig.build.json",
+    "clean": "tsc --build tsconfig.build.json --clean",
+    "wipe": "rimraf dist",
+    "prepublishOnly": "tsc"
+  },
+  "dependencies": {
+    "fluent-json-schema": "^3.0.1",
+    "object-hash": "^2.2.0",
+    "@lotusengine/types": "file:../types"
+  },
+  "devDependencies": {}
+}

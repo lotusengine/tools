@@ -1,0 +1,44 @@
+{
+  "name": "@lotusengine/sdk",
+  "private": true,
+  "scripts": {
+    "OLDbuild": "tsc -b",
+    "build:watch": "tsc -b -w",
+    "build": "lerna run --stream --include-dependencies build",
+    "build:fresh": "yarn clean",
+    "clean": "lerna run --parallel clean && rimraf .build-cache *.log coverage junit.xml",
+    "coverage": "jest --coverage",
+    "lint": "eslint --ext=js,ts .",
+    "OLDclean": "rimraf packages/**/dist",
+    "nuke": "yarn clean && rimraf node_modules",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "verify": "yarn lint && yarn build && yarn depcheck && yarn coverage && yarn bundle",
+    "watch": "yarn test:watch"
+  },
+  "prettier": "@lotusengine/prettier-config",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@changesets/cli": "^2.17.0",
+    "@lotusengine/eslint-config-lotusengine": "^1.1.0",
+    "@lotusengine/prettier-config": "^1.1.0",
+    "@tsconfig/node14": "^1.0.0",
+    "@types/fs-extra": "^9.0.12",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.10",
+    "dependency-check": "^4.1.0",
+    "eslint": "^7.20.0",
+    "jest": "^27.1.0",
+    "lerna": "^4.0.0",
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^27.0.5",
+    "ts-node": "^10.2.1",
+    "tsc": "^2.0.3",
+    "tsconfig-paths": "^3.11.0",
+    "typescript": "^4.4.2"
+  },
+  "dependencies": {}
+}
