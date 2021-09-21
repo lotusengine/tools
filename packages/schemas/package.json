@@ -28,12 +28,15 @@
   "scripts": {
     "build": "tsc --build tsconfig.build.json --force",
     "clean": "tsc --build tsconfig.build.json --clean",
-    "wipe": "rimraf dist",
-    "prepublishOnly": "yarn build"
+    "prepublishOnly": "yarn build",
+    "wipe": "rimraf dist"
   },
   "dependencies": {
     "fluent-json-schema": "^3.0.1",
     "object-hash": "^2.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "gitHead": "d346e837b4e0cc39fa06ede3defcd587ca2b2fef"
 }

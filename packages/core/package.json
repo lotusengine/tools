@@ -25,13 +25,13 @@
   "scripts": {
     "build": "tsc --build tsconfig.build.json --force",
     "clean": "tsc --build tsconfig.build.json --clean",
-    "wipe": "rimraf dist",
     "coverage": "jest --coverage",
     "depcheck": "dependency-check . --unused --no-dev && dependency-check . --missing --no-dev",
     "prepublishOnly": "yarn build",
     "test": "jest",
     "verify": "yarn lint && yarn build && yarn depcheck && yarn coverage",
-    "watch": "jest --watch"
+    "watch": "jest --watch",
+    "wipe": "rimraf dist"
   },
   "dependencies": {
     "clean-deep": "^3.4.0",
@@ -42,6 +42,9 @@
   "devDependencies": {
     "@types/deep-equal": "^1.0.1",
     "@types/lodash": "^4.14.173"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "gitHead": "d346e837b4e0cc39fa06ede3defcd587ca2b2fef"
 }
