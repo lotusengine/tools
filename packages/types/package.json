@@ -23,7 +23,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "tsc --build tsconfig.build.json",
+    "build": "tsc --build tsconfig.build.json --force",
     "clean": "tsc --build tsconfig.build.json --clean",
     "lint": "tsc --noEmit",
     "wipe": "rimraf dist"

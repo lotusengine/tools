@@ -60,7 +60,7 @@ export default abstract class BaseAction<
     // If not set we return empty object
     if (!this.parameters) return {} as TParams
 
-    const { next, ...rest } = this.parameters
+    const { next, ...rest } = Object.assign(this.parameters)
 
     return (
       next
