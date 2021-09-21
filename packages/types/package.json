@@ -26,6 +26,8 @@
     "build": "tsc --build tsconfig.build.json --force",
     "clean": "tsc --build tsconfig.build.json --clean",
     "lint": "tsc --noEmit",
-    "wipe": "rimraf dist"
-  }
+    "wipe": "rimraf dist",
+    "prepublishOnly": "yarn build"
+  },
+  "gitHead": "acfb296befa355e667a1331b10e1616563ac4c46"
 }
