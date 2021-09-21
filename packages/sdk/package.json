@@ -23,7 +23,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
+    "build": "tsc --build tsconfig.build.json",
     "clean": "tsc --build tsconfig.build.json --clean",
     "wipe": "rimraf dist",
     "coverage": "jest --coverage",
@@ -36,7 +36,5 @@
   "dependencies": {
     "fs-extra": "^10.0.0"
   },
-  "devDependencies": {
-    "@lotusengine/types": "file:../types"
-  }
+  "devDependencies": {}
 }

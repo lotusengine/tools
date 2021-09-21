@@ -19,7 +19,7 @@ export default {
   },
   moduleNameMapper: {
     '@lotusengine/(.*)': [join(__dirname, 'packages/$1/src')],
-    '(constructs|schemas|sdk|types|core|cli|prettier|eslint)/src/(.*)': [
+    '(constructs|schemas|sdk|types|core)/src/(.*)': [
       join(__dirname, 'packages/$1/src/$2')
     ]
   },

@@ -1,19 +1,20 @@
-import {
-  CollectionStackInput,
-  CollectionStackModel,
-  ServiceStackInput,
-  ServiceStackModel,
-  StackInput,
-  StackModel,
-  ViewStackInput,
-  ViewStackModel,
-  WorkflowStackInput,
-  WorkflowStackModel
-} from '@lotusengine/types'
-
 import { outputJson, readJson } from 'fs-extra'
 import { resolve } from 'path'
-import { StackPrepareOptions } from 'sdk/src/types/stack'
+import { StackPrepareOptions } from '../../types/stack'
+
+import {
+  CollectionStackModel,
+  CollectionStackInput,
+  StackInput,
+  WorkflowStackModel,
+  WorkflowStackInput,
+  ViewStackModel,
+  ViewStackInput,
+  StackModel,
+  ServiceStackModel,
+  ServiceStackInput
+} from '@lotusengine/types'
+
 import { stringifyData } from '../utils/dataUtils'
 
 export const STACK_NAME = 'stack.json'

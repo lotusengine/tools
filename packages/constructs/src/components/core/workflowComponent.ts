@@ -1,9 +1,6 @@
 import { ExtendedSchema, workflowSchema } from '@lotusengine/schemas'
 import { nanoid } from 'nanoid'
-import {
-  WorkflowDefinition,
-  WorkflowStackModel
-} from 'types/src/types/workflow'
+import { WorkflowDefinition, WorkflowStackModel } from '@lotusengine/types'
 import Action from '../base/actionComponent'
 import BaseComponent from '../base/baseComponent'
 

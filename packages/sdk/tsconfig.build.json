@@ -5,5 +5,10 @@
     "outDir": "./dist",
     "tsBuildInfoFile": "../../.build-cache/sdk.tsbuildinfo"
   },
+  "references": [
+    { "path": "../types/tsconfig.build.json", "prepend": false },
+    { "path": "../core/tsconfig.build.json", "prepend": false },
+    { "path": "../schemas/tsconfig.build.json", "prepend": false }
+  ],
   "include": ["src"]
 }

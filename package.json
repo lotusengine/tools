@@ -24,6 +24,7 @@
     "@changesets/cli": "^2.17.0",
     "@lotusengine/eslint-config-lotusengine": "^1.1.0",
     "@lotusengine/prettier-config": "^1.1.0",
+    "@lotusengine/tsconfig": "^1.1.6",
     "@tsconfig/node14": "^1.0.0",
     "@types/fs-extra": "^9.0.12",
     "@types/jest": "^27.0.1",

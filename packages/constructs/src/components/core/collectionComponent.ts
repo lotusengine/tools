@@ -1,11 +1,12 @@
 import { collectionSchema, ExtendedSchema } from '@lotusengine/schemas'
-import { CollectionStackModel } from '@lotusengine/types'
 import {
+  CollectionStackModel,
   CollectionMapping,
   CollectionOptions,
   CollectionQueries,
   CollectionTriggers
-} from 'types/src/types/collection'
+} from '@lotusengine/types'
+
 import BaseComponent from '../base/baseComponent'
 
 export default class Collection extends BaseComponent {

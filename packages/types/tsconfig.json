@@ -6,5 +6,4 @@
       "src/*": ["types/src/*"]
     }
   }
-  // "references": [{ "path": "../foo/tsconfig.build.json", "prepend": false }]
 }

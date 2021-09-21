@@ -23,7 +23,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
+    "build": "tsc --build tsconfig.build.json",
     "clean": "tsc --build tsconfig.build.json --clean",
     "wipe": "rimraf dist",
     "coverage": "jest --coverage",
@@ -40,7 +40,6 @@
     "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "@lotusengine/types": "file:../types",
     "@types/deep-equal": "^1.0.1",
     "@types/lodash": "^4.14.173"
   }

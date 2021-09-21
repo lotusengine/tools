@@ -1,5 +1,5 @@
 import { ExtendedSchema, viewSchema } from '@lotusengine/schemas'
-import { ViewStackModel } from 'types/src/types/view'
+import { ViewStackModel } from '@lotusengine/types'
 import BaseComponent from '../base/baseComponent'
 
 export default class View extends BaseComponent {

@@ -33,8 +33,7 @@
   },
   "dependencies": {
     "fluent-json-schema": "^3.0.1",
-    "object-hash": "^2.2.0",
-    "@lotusengine/types": "file:../types"
+    "object-hash": "^2.2.0"
   },
   "devDependencies": {}
 }

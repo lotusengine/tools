@@ -4,7 +4,7 @@ import {
   ServiceDefinition,
   ServiceSettings,
   ServiceStackModel
-} from 'types/src/types/service'
+} from '@lotusengine/types'
 
 // import Collection from './collectionComponent'
 // import View from './viewComponent'

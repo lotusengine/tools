@@ -18,7 +18,7 @@
   "types": "dist/index.d.ts",
   "files": [],
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
+    "build": "tsc --build tsconfig.build.json",
     "clean": "tsc --build tsconfig.build.json --clean",
     "wipe": "rimraf dist",
     "coverage": "jest --coverage",
@@ -29,8 +29,6 @@
     "watch": "jest --watch"
   },
   "dependencies": {
-    "@lotusengine/schemas": "file:../schemas",
-    "@lotusengine/types": "file:../types",
     "ajv": "^8.5.0",
     "ajv-formats": "^2.1.1",
     "nanoid": "^3.1.25",
