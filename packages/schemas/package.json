@@ -1,6 +1,6 @@
 {
   "name": "@lotusengine/schemas",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "LotusEngine JSON schemas",
   "keywords": [
     "lotusengine",
@@ -34,6 +34,5 @@
   "dependencies": {
     "fluent-json-schema": "^3.0.1",
     "object-hash": "^2.2.0"
-  },
-  "devDependencies": {}
+  }
 }

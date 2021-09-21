@@ -1,6 +1,6 @@
 {
   "name": "@lotusengine/sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "LotusEngine SDK",
   "keywords": [
     "typescript",
@@ -35,6 +35,5 @@
   },
   "dependencies": {
     "fs-extra": "^10.0.0"
-  },
-  "devDependencies": {}
+  }
 }
