@@ -1,6 +1,6 @@
 {
   "name": "@lotusengine/core",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "LotusEngine core utilities",
   "keywords": [
     "typescript",
