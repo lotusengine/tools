@@ -34,8 +34,12 @@
     "wipe": "rimraf dist"
   },
   "dependencies": {
+    "@lotusengine/core": "file: ../core",
+    "@lotusengine/schemas": "file: ../schemas",
+    "@lotusengine/types": "file: ../types",
     "fs-extra": "^10.0.0"
   },
+  "devDependencies": {},
   "publishConfig": {
     "access": "public"
   },

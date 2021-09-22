@@ -1,7 +1,6 @@
 import { outputJson, readJson } from 'fs-extra'
 import { resolve } from 'path'
 import { StackPrepareOptions } from '../../types/stack'
-
 import {
   CollectionStackModel,
   CollectionStackInput,
@@ -14,8 +13,9 @@ import {
   ServiceStackModel,
   ServiceStackInput
 } from '@lotusengine/types'
-
 import { stringifyData } from '../utils/dataUtils'
+import { readConfig } from '../config/configManager'
+import { InvalidStackConfigError } from '../core/systemErrors'
 
 export const STACK_NAME = 'stack.json'
 export const STACK_PATH = '.lotus'
@@ -87,6 +87,11 @@ export const prepareServiceData = (
 
 // Read stack data from build file
 export const loadStackData = async (options?: StackPrepareOptions) => {
-  const output = options?.output || STACK_PATH
-  return await readJson(resolve(output, STACK_NAME))
+  const path = options?.output || STACK_PATH
+
+  const config = await readConfig({ path })
+
+  if (!config || !config.app) throw new InvalidStackConfigError()
+
+  return config.app
 }

@@ -1,7 +1,7 @@
 import Ajv, { InstanceOptions } from 'ajv'
 import addFormats from 'ajv-formats'
-import { InvalidDataError } from '../core/systemErrors'
 import { JsonSchema } from '../types/common'
+import { InvalidDataError } from './systemErrors'
 
 export const getClient = (options?: Partial<InstanceOptions>): Ajv => {
   const ajv = new Ajv({
@@ -38,14 +38,9 @@ export const validateData = <T>(
 
   // Generic throw - ideally wrap in try/catch with specific validation errors
   if (!valid) {
-    //console.log(validate.errors)
-    //   const errors = prettifyErrors(validate.errors)
+    // console.log(validate.errors)
+    // const errors = prettifyErrors(validate.errors)
 
-    // // Ideally schemas have an ID so we know which failed without needing to pass schema to error
-    // const id: string | undefined =
-    //   'id' in schema ? (schema.id as string) : undefined
-
-    //{ errors, data, id }
     throw new InvalidDataError()
   }
   return input

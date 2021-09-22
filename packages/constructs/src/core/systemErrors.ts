@@ -8,14 +8,6 @@ export class ActionParameterError extends LotusError {
   }
 }
 
-// Invalid data
-export class InvalidDataError extends LotusError {
-  constructor(cause?: Error) {
-    const message = `Invalid data`
-    super('INVALID_DATA_ERROR', 400, {}, message, cause)
-  }
-}
-
 // No service defined for a stack
 export class UndefinedStackServiceError extends LotusError {
   constructor(cause?: Error) {

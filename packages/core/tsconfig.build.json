@@ -4,15 +4,6 @@
     "rootDir": "./src",
     "outDir": "./dist",
     "tsBuildInfoFile": "../../.build-cache/core.tsbuildinfo"
-
-    // "paths": {
-    //   // "@lotusengine/*": ["*/src"],
-    //   "^constructs/*": ["@lotusengine/constructs/*"],
-    //   "^schemas/*": ["@lotusengine/schemas/*"],
-    //   "^types/*": ["@lotusengine/types/*"],
-    //   "^sdk/*": ["@lotusengine/sdk/*"],
-    //   "^core/*": ["@lotusengine/core/*"]
-    // }
   },
   "references": [
     { "path": "../types/tsconfig.build.json", "prepend": false },

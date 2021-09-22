@@ -29,8 +29,9 @@
     "wipe": "rimraf dist"
   },
   "dependencies": {
-    "ajv": "^8.5.0",
-    "ajv-formats": "^2.1.1",
+    "@lotusengine/core": "file: ../core",
+    "@lotusengine/schemas": "file: ../schemas",
+    "@lotusengine/types": "file: ../types",
     "nanoid": "^3.1.25",
     "object-hash": "^2.2.0"
   },

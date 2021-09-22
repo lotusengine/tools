@@ -1,6 +1,6 @@
 import hash from 'object-hash'
-import { validateData } from '../../lib/validatorUtils'
 import { ExtendedSchema } from '@lotusengine/schemas'
+import { validateData } from 'core/src/lib/validatorUtils'
 
 export default abstract class Base {
   abstract schema: ExtendedSchema

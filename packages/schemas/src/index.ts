@@ -26,6 +26,6 @@ export { validationSchema as serviceSchema } from './components/core/serviceSche
 export { validationSchema as parameterSchema } from './components/core/parameterSchema'
 export { validationSchema as stackSchema } from './components/core/stackSchema'
 export { validationSchema as itemSchema } from './components/core/itemSchema'
-
+export { validationSchema as configSchema } from './system/configSchema'
 
 export * from './types'
