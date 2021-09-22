@@ -29,9 +29,9 @@
     "wipe": "rimraf dist"
   },
   "dependencies": {
-    "@lotusengine/core": "file: ../core",
-    "@lotusengine/schemas": "file: ../schemas",
-    "@lotusengine/types": "file: ../types",
+    "@lotusengine/core": "*",
+    "@lotusengine/schemas": "*",
+    "@lotusengine/types": "*",
     "nanoid": "^3.1.25",
     "object-hash": "^2.2.0"
   },

@@ -34,8 +34,8 @@
     "wipe": "rimraf dist"
   },
   "dependencies": {
-    "@lotusengine/schemas": "file: ../schemas",
-    "@lotusengine/types": "file: ../types",
+    "@lotusengine/schemas": "*",
+    "@lotusengine/types": "*",
     "ajv": "^8.6.3",
     "ajv-formats": "^2.1.1",
     "clean-deep": "^3.4.0",

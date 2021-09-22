@@ -32,7 +32,7 @@
     "wipe": "rimraf dist"
   },
   "dependencies": {
-    "@lotusengine/types": "file: ../types",
+    "@lotusengine/types": "*",
     "fluent-json-schema": "^3.0.1",
     "object-hash": "^2.2.0"
   },
