@@ -3,7 +3,7 @@
   "compilerOptions": {
     "paths": {
       "@lotusengine/*": ["../packages/*/src"],
-      "src/*": ["types/src/*"]
+      "src/*": ["./src/*"]
     }
   }
 }
