@@ -1,6 +1,6 @@
 {
   "name": "@lotusengine/schemas",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "LotusEngine JSON schemas",
   "keywords": [
     "lotusengine",
@@ -32,7 +32,7 @@
     "wipe": "rimraf dist"
   },
   "dependencies": {
-    "@lotusengine/types": "*",
+    "@lotusengine/types": "^1.0.4",
     "fluent-json-schema": "^3.0.1",
     "object-hash": "^2.2.0"
   },
