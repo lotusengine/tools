@@ -1,6 +1,6 @@
 {
   "name": "@lotusengine/sdk",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "LotusEngine SDK",
   "keywords": [
     "typescript",
@@ -34,8 +34,8 @@
     "wipe": "rimraf dist"
   },
   "dependencies": {
-    "@lotusengine/core": "^1.0.7",
-    "@lotusengine/schemas": "^1.0.7",
+    "@lotusengine/core": "^1.0.8",
+    "@lotusengine/schemas": "^1.0.8",
     "@lotusengine/types": "*",
     "fs-extra": "^10.0.0"
   },

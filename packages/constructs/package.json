@@ -1,6 +1,6 @@
 {
   "name": "@lotusengine/constructs",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "LotusEngine SDK TypeScript constructs",
   "keywords": [
     "typescript",
@@ -29,8 +29,8 @@
     "wipe": "rimraf dist"
   },
   "dependencies": {
-    "@lotusengine/core": "^1.0.7",
-    "@lotusengine/schemas": "^1.0.7",
+    "@lotusengine/core": "^1.0.8",
+    "@lotusengine/schemas": "^1.0.8",
     "@lotusengine/types": "*",
     "nanoid": "^3.1.25",
     "object-hash": "^2.2.0"
