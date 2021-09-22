@@ -1,4 +1,4 @@
-import { outputJson, readJson } from 'fs-extra'
+import { outputJson } from 'fs-extra'
 import { resolve } from 'path'
 import { StackPrepareOptions } from '../../types/stack'
 import {
