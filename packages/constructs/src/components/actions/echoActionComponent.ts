@@ -3,7 +3,7 @@ import {
   ActionTypeName,
   EchoActionParameters
 } from '@lotusengine/types'
-import { EchoContructParameters } from '#constructs/src/types/common'
+import { EchoContructParameters } from '#constructs/types/common'
 import { ExtendedSchema, echoActionSchema } from '@lotusengine/schemas'
 import Action from '../base/actionComponent'
 

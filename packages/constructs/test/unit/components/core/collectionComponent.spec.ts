@@ -1,4 +1,4 @@
-import { Collection } from '#constructs/src/components'
+import { Collection } from '#constructs/components'
 
 describe('Collection component', () => {
   test.only('getData() returns collection schema', () => {

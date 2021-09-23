@@ -1,5 +1,5 @@
 import { configSchema } from '@lotusengine/schemas'
-import { validateData } from '#core/src/lib/validatorUtils'
+import { validateData } from '#core/lib/validatorUtils'
 import { readJson } from 'fs-extra'
 import { resolve } from 'path'
 import { Config, ReadConfigOptions } from '../../types/config'

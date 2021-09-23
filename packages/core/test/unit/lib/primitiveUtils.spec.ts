@@ -1,4 +1,4 @@
-import { isEmpty, isSame, removeEmptyProps } from '#core/src/lib/primitiveUtils'
+import { isEmpty, isSame, removeEmptyProps } from '#core/lib/primitiveUtils'
 
 describe('Primitive library', () => {
   it('isSame() returns true for 2 objects of same values but diff order', () => {

@@ -4,7 +4,7 @@ import {
   Stack,
   View,
   Workflow
-} from '#constructs/src/components'
+} from '#constructs/components'
 
 describe('Stack component', () => {
   test.only('getData() returns stack schema', () => {

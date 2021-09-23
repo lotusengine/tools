@@ -1,4 +1,4 @@
-import { Service } from '#constructs/src/components'
+import { Service } from '#constructs/components'
 
 describe('Service component', () => {
   test.only('getData() returns service schema', () => {

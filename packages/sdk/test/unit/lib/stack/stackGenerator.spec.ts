@@ -5,7 +5,7 @@ import {
   prepareStack,
   prepareStackData
 } from '#sdk/src/lib/stack/stackGenerator'
-import { StackInput, StackModel } from '#types/src/types/stack'
+import { StackInput, StackModel } from '#types/types/stack'
 
 describe('Stack generator', () => {
   const stack: StackModel = {

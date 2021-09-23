@@ -1,4 +1,4 @@
-import { commonKeySchema } from '#schemas/src/utils/schemaUtils'
+import { commonKeySchema } from '#schemas/utils/schemaUtils'
 import S from 'fluent-json-schema'
 
 export const validationSchema = S.object()

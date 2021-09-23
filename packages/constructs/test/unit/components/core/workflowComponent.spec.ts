@@ -1,4 +1,4 @@
-import { Workflow, EchoAction, StartAction } from '#constructs/src/components'
+import { Workflow, EchoAction, StartAction } from '#constructs/components'
 
 describe('Workflow component', () => {
   test.only('getData() returns workflow schema', () => {
