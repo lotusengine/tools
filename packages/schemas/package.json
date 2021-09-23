@@ -17,7 +17,7 @@
   },
   "imports": {
     "#schemas/*": {
-      "default": "./dis,t/*.js"
+      "default": "./dist/*.js"
     }
   },
   "license": "MIT",

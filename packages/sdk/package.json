@@ -24,7 +24,7 @@
   ],
   "imports": {
     "#sdk/*": {
-      "default": "./dis,t/*.js"
+      "default": "./dist/*.js"
     }
   },
   "scripts": {
