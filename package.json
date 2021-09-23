@@ -2,16 +2,15 @@
   "name": "@lotusengine/sdk",
   "private": true,
   "scripts": {
-    "OLDbuild": "tsc -b",
     "build:watch": "tsc -b -w",
     "build": "lerna run --stream --include-dependencies build",
     "build:fresh": "yarn clean",
     "clean": "lerna run --parallel clean && rimraf .build-cache *.log coverage junit.xml",
     "coverage": "jest --coverage",
     "lint": "eslint --ext=js,ts .",
-    "OLDclean": "rimraf packages/**/dist",
     "nuke": "yarn clean && rimraf node_modules",
     "test": "jest",
+    "package": "lerna publish --conventional-commits",
     "test:watch": "jest --watch",
     "verify": "yarn lint && yarn build && yarn depcheck && yarn coverage && yarn bundle",
     "watch": "yarn test:watch"
