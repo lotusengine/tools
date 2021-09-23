@@ -12,8 +12,10 @@
     "type": "git",
     "url": "git+https://github.com/lotusengine/sdk.git"
   },
-  "#types/*": {
-    "default": "./dis,t/*.js"
+  "imports": {
+    "#types/*": {
+      "default": "./dis,t/*.js"
+    }
   },
   "license": "MIT",
   "author": "LotusEngine {https://lotusengine.com/)",
