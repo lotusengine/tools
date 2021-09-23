@@ -22,8 +22,8 @@
     "README.md",
     "LICENSE"
   ],
-  "imports": {
-    "#*": "./packages/*.js"
+  "#sdk/*": {
+    "default": "./dis,t/*.js"
   },
   "scripts": {
     "build": "tsc --build tsconfig.build.json --force",
