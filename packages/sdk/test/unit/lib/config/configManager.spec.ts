@@ -4,8 +4,8 @@ import {
   readConfig,
   validateConfiguration,
   CONFIG_NAME
-} from 'sdk/src/lib/config/configManager'
-import { Config } from 'sdk/src/types/config'
+} from '#sdk/src/lib/config/configManager'
+import { Config } from '#sdk/src/types/config'
 
 describe('Config manager', () => {
   it('readConfig() loads configuration from file', async () => {

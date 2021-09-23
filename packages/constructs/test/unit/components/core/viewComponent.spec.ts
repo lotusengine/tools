@@ -1,4 +1,4 @@
-import { View } from 'constructs/src/components'
+import { View } from '#constructs/src/components'
 
 describe('View component', () => {
   test.only('getData() returns view schema', () => {

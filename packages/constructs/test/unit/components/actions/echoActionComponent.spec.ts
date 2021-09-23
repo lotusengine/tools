@@ -1,4 +1,4 @@
-import { EchoAction } from 'constructs/src/components'
+import { EchoAction } from '#constructs/src/components'
 
 describe('Echo action component', () => {
   test.only('getData() returns action data with next action as string', () => {

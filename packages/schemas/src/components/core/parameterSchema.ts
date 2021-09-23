@@ -1,7 +1,7 @@
-// import { validateData } from 'constructs/src/lib/validatorUtils'
+// import { validateData } from '#constructs/src/lib/validatorUtils'
 import S from 'fluent-json-schema'
 // import { commonKeySchema, commonSummarySchema } from 'src/utils/schemaUtils'
-// import { ParameterModel } from 'types/src/types/parameter'
+// import { ParameterModel } from '#typessrc/types/parameter'
 
 export const validationSchema = S.object()
 
