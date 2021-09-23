@@ -1,10 +1,4 @@
 {
   "extends": "../../tsconfig.json",
-  "compilerOptions": {
-    "paths": {
-      "@lotusengine/*": ["../packages/*/src"],
-      "src/*": ["./src/*"]
-    }
-  },
   "references": [{ "path": "../types/tsconfig.build.json", "prepend": false }]
 }

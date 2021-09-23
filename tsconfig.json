@@ -5,11 +5,11 @@
     "baseUrl": "packages",
     "paths": {
       "@lotusengine/*": ["*/src"],
-      "constructs/*": ["./constructs/*"],
-      "schemas/*": ["./schemas/*"],
-      "types/*": ["./types/*"],
-      "sdk/*": ["./sdk/*"],
-      "core/*": ["./core/*"]
+      "#constructs/*": ["./constructs/*"],
+      "#schemas/*": ["./schemas/*"],
+      "#types/*": ["./types/*"],
+      "#sdk/*": ["./sdk/*"],
+      "#core/*": ["./core/*"]
     },
     "composite": true
   },

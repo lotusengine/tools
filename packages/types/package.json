@@ -6,11 +6,14 @@
     "typescript",
     "lotusengine"
   ],
-  "homepage": "https://github.com/lotusengine/sdk/packages/types#readme",
+  "homepage": "https://github.com/lotusengine/sdk/blob/master/packages/types/README.md",
   "bugs": "https://github.com/lotusengine/lotusengine/issues",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lotusengine/lotusengine.git"
+    "url": "git+https://github.com/lotusengine/sdk.git"
+  },
+  "imports": {
+    "#*": "./packages/*.js"
   },
   "license": "MIT",
   "author": "LotusEngine {https://lotusengine.com/)",
@@ -29,8 +32,11 @@
     "prepublishOnly": "yarn build",
     "wipe": "rimraf dist"
   },
+  "engines": {
+    "node": ">=14.6.0"
+  },
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "d346e837b4e0cc39fa06ede3defcd587ca2b2fef"
+  "gitHead": "1f7377e6ca3312f08914d51e97bb53c643f27c2a"
 }
