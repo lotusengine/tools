@@ -1,5 +1,5 @@
 {
-  "extends": "@lotusengine/tsconfig",
+  "extends": "@lotusengine/tsconfig/tsconfig.json",
   "compilerOptions": {
     "rootDir": ".",
     "baseUrl": "packages",
