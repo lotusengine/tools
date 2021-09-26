@@ -1,11 +1,11 @@
 import { remove } from 'fs-extra'
 import { resolve } from 'path'
+import { StackInput, StackModel } from '#types/types/stack'
 import {
   loadStackData,
   prepareStack,
   prepareStackData
-} from '#sdk/src/lib/stack/stackGenerator'
-import { StackInput, StackModel } from '#types/types/stack'
+} from '#sdk/lib/stack/stackGenerator'
 
 describe('Stack generator', () => {
   const stack: StackModel = {
@@ -73,11 +73,11 @@ describe('Stack generator', () => {
   })
 
   it('prepareStack() should create out dir and write JSON stack output', async () => {
-    const output = resolve(__dirname, 'tmp')
-    await prepareStack(stack, { output })
+    const path = resolve(__dirname, 'tmp')
+    await prepareStack(stack, { path })
 
-    const json = await loadStackData({ output })
+    const json = await loadStackData({ path })
     expect(json).toEqual(input)
-    await remove(output)
+    await remove(path)
   })
 })

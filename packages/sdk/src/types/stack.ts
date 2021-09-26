@@ -1,3 +1,6 @@
 export type StackPrepareOptions = {
-  output?: string
+  path?: string
+}
+export type StackLoadOptions = {
+  path?: string
 }

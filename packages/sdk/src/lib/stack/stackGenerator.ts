@@ -1,6 +1,6 @@
-import { outputJson } from 'fs-extra'
+import { outputJson, readJSON } from 'fs-extra'
 import { resolve } from 'path'
-import { StackPrepareOptions } from '../../types/stack'
+import { StackLoadOptions, StackPrepareOptions } from '../../types/stack'
 import {
   CollectionStackModel,
   CollectionStackInput,
@@ -14,7 +14,6 @@ import {
   ServiceStackInput
 } from '@lotusengine/types'
 import { stringifyData } from '../utils/dataUtils'
-import { readConfig } from '../config/configManager'
 import { InvalidStackConfigError } from '../core/systemErrors'
 
 export const STACK_NAME = 'stack.json'
@@ -25,7 +24,7 @@ export const prepareStack = async (
   stack: StackModel,
   options?: StackPrepareOptions
 ) => {
-  const output = options?.output || STACK_PATH
+  const output = options?.path || STACK_PATH
   await outputJson(resolve(output, STACK_NAME), prepareStackData(stack))
 }
 
@@ -86,12 +85,13 @@ export const prepareServiceData = (
 }
 
 // Read stack data from build file
-export const loadStackData = async (options?: StackPrepareOptions) => {
-  const path = options?.output || STACK_PATH
+export const loadStackData = async (options?: StackLoadOptions) => {
+  const path = options?.path || './'
 
-  const config = await readConfig({ path })
+  console.log(resolve(path, STACK_PATH, STACK_NAME))
+  const config = await readJSON(resolve(path, STACK_PATH, STACK_NAME))
 
-  if (!config || !config.app) throw new InvalidStackConfigError()
+  if (!config) throw new InvalidStackConfigError()
 
-  return config.app
+  return config
 }
