@@ -21,8 +21,8 @@ export type ServiceModel = {
   label?: string
   summary?: string
   description?: string
-  settings?: ServiceSettings
-  definition?: ServiceDefinition
+  parameters?: ServiceSettings
+  settings?: ServiceDefinition
   domain?: ServiceDomain
 }
 
@@ -30,8 +30,8 @@ export type ServiceStackModel = {
   label?: string
   summary?: string
   description?: string
-  settings?: ServiceSettings
-  definition?: ServiceDefinition
+  parameters?: ServiceSettings
+  settings?: ServiceDefinition
   domain?: ServiceDomain
 }
 
@@ -43,8 +43,8 @@ export type ServiceCreateInput = {
   label?: string
   summary?: string
   description?: string
+  parameters?: JSONData
   settings?: JSONData
-  definition?: JSONData
   domain?: ServiceDomain
 }
 
@@ -53,7 +53,7 @@ export type ServiceUpdateInput = {
   label?: string
   summary?: string
   description?: string
+  parameters?: JSONData
   settings?: JSONData
-  definition?: JSONData
   domain?: ServiceDomain
 }

@@ -81,7 +81,7 @@ export const prepareViewData = (view: ViewStackModel): ViewStackInput => {
 export const prepareServiceData = (
   service: ServiceStackModel
 ): ServiceStackInput => {
-  return stringifyData(service, ['settings', 'definition'])
+  return stringifyData(service, ['parameters', 'settings'])
 }
 
 // Read stack data from build file

@@ -25,10 +25,10 @@ describe('Service component', () => {
       label: 'foo',
       summary: 'foo bar',
       description: 'lorem ipsum',
-      settings: {
+      parameters: {
         foo: 'bar'
       },
-      definition: [
+      settings: [
         {
           type: 'unit',
           element: {

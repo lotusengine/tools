@@ -21,8 +21,8 @@ export default class Service extends Base {
   label: string | undefined
   summary: string | undefined
   description: string | undefined
-  settings: ServiceSettings = {}
-  definition: ServiceDefinition = []
+  parameters: ServiceSettings = {}
+  settings: ServiceDefinition = []
 
   setLabel(label: string): this {
     this.label = label
@@ -51,22 +51,22 @@ export default class Service extends Base {
     return this.description
   }
 
-  setSettings(settings: ServiceSettings): this {
-    this.settings = settings
+  setSettings(parameters: ServiceSettings): this {
+    this.parameters = parameters
     return this
   }
 
   getSettings(): ServiceSettings | undefined {
-    return this.settings
+    return this.parameters
   }
 
-  setDefinition(definition: ServiceDefinition): this {
-    this.definition = definition
+  setDefinition(settings: ServiceDefinition): this {
+    this.settings = settings
     return this
   }
 
   getDefinition(): ServiceDefinition | undefined {
-    return this.definition
+    return this.settings
   }
 
   getData(): ServiceStackModel {
@@ -74,8 +74,8 @@ export default class Service extends Base {
       label: this.getLabel(),
       summary: this.getSummary(),
       description: this.getDescription(),
-      settings: this.getSettings(),
-      definition: this.getDefinition()
+      parameters: this.getSettings(),
+      settings: this.getDefinition()
     }
   }
 }

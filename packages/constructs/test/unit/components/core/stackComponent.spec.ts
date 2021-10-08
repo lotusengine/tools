@@ -29,8 +29,8 @@ describe('Stack component', () => {
         data: {
           label: 'foo',
           summary: 'foo bar',
-          settings: {},
-          definition: []
+          parameters: {},
+          settings: []
         }
       },
       workflows: [

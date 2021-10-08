@@ -12,7 +12,7 @@ describe('Stack generator', () => {
     service: {
       id: 'service',
       data: {
-        settings: { foo: 'bar' }
+        parameters: { foo: 'bar' }
       }
     },
     workflows: [
@@ -41,7 +41,7 @@ describe('Stack generator', () => {
     service: {
       id: 'service',
       data: {
-        settings: '{"foo":"bar"}'
+        parameters: '{"foo":"bar"}'
       }
     },
     workflows: [
