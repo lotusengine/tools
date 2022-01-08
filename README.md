@@ -2,8 +2,8 @@
 
 This repo contains the following packages:
 
-- [@lotusengine/sdk](./packages/sdk/README.md): A simple set of utilities for CLI stack deployment
-- [@lotusengine/constructs](./packages/constructs/README.md): A set of TypeScript classes to build stacks and workflows in a fluent manner
+- [@lotusengine/sdk](./packages/constructs/README.md): A set of TypeScript classes to build stacks and workflows in a fluent manner
+- [@lotusengine/stacker](./packages/sdk/README.md): A simple set of utilities for CLI stack deployment
 - [@lotusengine/types](./packages/types/README.md): Common TypeScript types
 - [@lotusengine/schemas](./packages/schemas/README.md): JSON schemas for stack related items
 - [@lotusengine/core](./packages/core/README.md): Common package development utilities

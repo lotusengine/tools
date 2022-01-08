@@ -1,27 +1,32 @@
 {
-  "name": "@lotusengine/sdk",
+  "name": "@lotusengine/stacker",
   "version": "1.0.17",
-  "description": "LotusEngine TypeScript SDK",
+  "description": "LotusEngine SDK",
   "keywords": [
     "typescript",
     "lotusengine"
   ],
-  "homepage": "https://github.com/lotusengine/sdk/blob/master/packages/sdk/README.md",
+  "homepage": "https://github.com/lotusengine/stacker/blob/master/packages/stacker/README.md",
   "bugs": "https://github.com/lotusengine/lotusengine/issues",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lotusengine/sdk.git"
-  },
-  "imports": {
-    "#sdk/*": {
-      "default": "./dist/*.js"
-    }
+    "url": "git+https://github.com/lotusengine/stacker.git"
   },
   "license": "MIT",
   "author": "LotusEngine {https://lotusengine.com/)",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": [],
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "imports": {
+    "#stacker/*": {
+      "default": "./dist/*.js"
+    }
+  },
   "scripts": {
     "build": "tsc --build tsconfig.build.json --force",
     "clean": "tsc --build tsconfig.build.json --clean",
@@ -37,11 +42,7 @@
     "@lotusengine/core": "^1.0.17",
     "@lotusengine/schemas": "^1.0.17",
     "@lotusengine/types": "^1.0.17",
-    "nanoid": "^3.1.25",
-    "object-hash": "^2.2.0"
-  },
-  "devDependencies": {
-    "@types/object-hash": "^2.1.1"
+    "fs-extra": "^10.0.0"
   },
   "engines": {
     "node": ">=14.6.0"

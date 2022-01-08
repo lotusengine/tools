@@ -7,113 +7,53 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package @lotusengine/sdk
 
-
-
-
-
-## [1.0.14](https://github.com/lotusengine/sdk/compare/@lotusengine/sdk@1.0.13...@lotusengine/sdk@1.0.14) (2021-09-24)
-
-**Note:** Version bump only for package @lotusengine/sdk
-
-
-
-
-
 ## [1.0.13](https://github.com/lotusengine/sdk/compare/@lotusengine/sdk@1.0.12...@lotusengine/sdk@1.0.13) (2021-09-23)
 
 **Note:** Version bump only for package @lotusengine/sdk
-
-
-
-
 
 ## [1.0.12](https://github.com/lotusengine/sdk/compare/@lotusengine/sdk@1.0.11...@lotusengine/sdk@1.0.12) (2021-09-23)
 
 **Note:** Version bump only for package @lotusengine/sdk
 
-
-
-
-
 ## [1.0.11](https://github.com/lotusengine/sdk/compare/@lotusengine/sdk@1.0.10...@lotusengine/sdk@1.0.11) (2021-09-23)
 
 **Note:** Version bump only for package @lotusengine/sdk
-
-
-
-
 
 ## [1.0.10](https://github.com/lotusengine/sdk/compare/@lotusengine/sdk@1.0.9...@lotusengine/sdk@1.0.10) (2021-09-23)
 
 **Note:** Version bump only for package @lotusengine/sdk
 
-
-
-
-
 ## [1.0.9](https://github.com/lotusengine/lotusengine/compare/@lotusengine/sdk@1.0.8...@lotusengine/sdk@1.0.9) (2021-09-22)
 
 **Note:** Version bump only for package @lotusengine/sdk
-
-
-
-
 
 ## [1.0.8](https://github.com/lotusengine/lotusengine/compare/@lotusengine/sdk@1.0.7...@lotusengine/sdk@1.0.8) (2021-09-22)
 
 **Note:** Version bump only for package @lotusengine/sdk
 
-
-
-
-
 ## [1.0.7](https://github.com/lotusengine/lotusengine/compare/@lotusengine/sdk@1.0.6...@lotusengine/sdk@1.0.7) (2021-09-22)
 
 **Note:** Version bump only for package @lotusengine/sdk
-
-
-
-
 
 ## [1.0.6](https://github.com/lotusengine/lotusengine/compare/@lotusengine/sdk@1.0.5...@lotusengine/sdk@1.0.6) (2021-09-22)
 
 **Note:** Version bump only for package @lotusengine/sdk
 
-
-
-
-
 ## [1.0.5](https://github.com/lotusengine/lotusengine/compare/@lotusengine/sdk@1.0.4...@lotusengine/sdk@1.0.5) (2021-09-22)
 
 **Note:** Version bump only for package @lotusengine/sdk
-
-
-
-
 
 ## [1.0.4](https://github.com/lotusengine/lotusengine/compare/@lotusengine/sdk@1.0.3...@lotusengine/sdk@1.0.4) (2021-09-22)
 
 **Note:** Version bump only for package @lotusengine/sdk
 
-
-
-
-
 ## [1.0.3](https://github.com/lotusengine/lotusengine/compare/@lotusengine/sdk@1.0.2...@lotusengine/sdk@1.0.3) (2021-09-21)
 
 **Note:** Version bump only for package @lotusengine/sdk
 
-
-
-
-
 ## [1.0.2](https://github.com/lotusengine/lotusengine/compare/@lotusengine/sdk@1.0.1...@lotusengine/sdk@1.0.2) (2021-09-21)
 
 **Note:** Version bump only for package @lotusengine/sdk
-
-
-
-
 
 ## 1.0.1 (2021-09-21)
 

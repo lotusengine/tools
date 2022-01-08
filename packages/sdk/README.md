@@ -1,5 +1,3 @@
-# LotusEngine SDK
+# LotusEngine TypeScript SDK
 
-TypeScript/JavaScript stack development kit for LotusEngine.
-
-This is really just a simple wrapper to load a stack config in the right place for the CLI to deploy.
+A set of TypeScript/JavaScript classes to help develop stacks and workflows.

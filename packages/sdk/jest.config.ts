@@ -5,4 +5,5 @@ export default {
   name: '@lotusengine/sdk',
   displayName: 'SDK',
   rootDir: '.'
+  //testMatch: [`<rootDir>/packages/sdk/**/*.test.ts`]
 }

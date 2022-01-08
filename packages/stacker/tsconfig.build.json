@@ -3,12 +3,12 @@
   "compilerOptions": {
     "rootDir": "./src",
     "outDir": "./dist",
-    "tsBuildInfoFile": "../../.build-cache/sdk.tsbuildinfo"
+    "tsBuildInfoFile": "../../.build-cache/stacker.tsbuildinfo"
   },
-  "include": ["src"],
   "references": [
     { "path": "../types/tsconfig.build.json", "prepend": false },
     { "path": "../core/tsconfig.build.json", "prepend": false },
     { "path": "../schemas/tsconfig.build.json", "prepend": false }
-  ]
+  ],
+  "include": ["src"]
 }
