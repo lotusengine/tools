@@ -1,28 +1,31 @@
 {
   "name": "@lotusengine/sdk",
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "build:watch": "tsc -b -w",
     "build": "lerna run --stream --include-dependencies build",
     "build:fresh": "yarn clean",
+    "build:watch": "tsc -b -w",
     "clean": "lerna run --parallel clean && rimraf .build-cache *.log coverage junit.xml",
     "coverage": "jest --coverage",
     "lint": "eslint --ext=js,ts .",
     "nuke": "yarn clean && rimraf node_modules",
-    "test": "jest",
     "package": "lerna publish --conventional-commits",
+    "test": "jest",
     "test:watch": "jest --watch",
     "verify": "yarn lint && yarn build && yarn depcheck && yarn coverage && yarn bundle",
-    "watch": "yarn test:watch"
+    "watch": "yarn test:watch",
+    "docs": "npx typedoc --entryPointStrategy packages ."
   },
   "prettier": "@lotusengine/prettier-config",
-  "workspaces": [
-    "packages/*"
-  ],
+  "dependencies": {},
   "devDependencies": {
     "@changesets/cli": "^2.17.0",
     "@lotusengine/eslint-config-lotusengine": "^1.1.0",
     "@lotusengine/prettier-config": "^1.1.0",
+    "@lotusengine/plugin-typedoc": "file:/Users/Yashua/LotusEngine/Code/TypeDoc Theme/dist",
     "@lotusengine/tsconfig": "^1.1.6",
     "@tsconfig/node14": "^1.0.0",
     "@types/fs-extra": "^9.0.12",
@@ -38,7 +41,10 @@
     "ts-node": "^10.2.1",
     "tsc": "^2.0.3",
     "tsconfig-paths": "^3.11.0",
+    "typedoc": "^0.22.10",
+    "typedoc-github-wiki-theme": "^1.0.0",
+    "typedoc-plugin-markdown": "^3.11.11",
+    "typedoc-plugin-missing-exports": "^0.22.6",
     "typescript": "^4.4.2"
-  },
-  "dependencies": {}
+  }
 }

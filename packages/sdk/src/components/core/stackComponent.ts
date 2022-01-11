@@ -1,6 +1,6 @@
 import { ExtendedSchema, stackSchema } from '@lotusengine/schemas'
 import { StackModel } from '@lotusengine/types'
-import { UndefinedStackServiceError } from '#sdk/system/systemErrors'
+import { UndefinedStackServiceError } from 'sdk/src/system/systemErrors'
 
 import { Collection, Service, View, Workflow } from '..'
 import Base from '../base/baseComponent'

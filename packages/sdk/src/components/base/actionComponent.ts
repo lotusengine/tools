@@ -1,7 +1,7 @@
 import { Action, ActionParameters, ActionTypeName } from '@lotusengine/types'
 import Base from './baseComponent'
 import { customAlphabet } from 'nanoid'
-import { ActionContructParameters } from '#sdk/types/common'
+import { ActionContructParameters } from 'sdk/src/types/common'
 import { removeEmptyProps } from '@lotusengine/core'
 
 const nanoid = customAlphabet('01234567890abcdefghijklmnopqrstuvwxyz', 10)

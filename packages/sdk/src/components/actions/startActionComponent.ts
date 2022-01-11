@@ -3,7 +3,7 @@ import {
   ActionTypeName,
   StartActionParameters
 } from '@lotusengine/types'
-import { StartContructParameters } from '../../types/common'
+import { StartContructParameters } from '#sdk/types/common'
 import { ExtendedSchema, startActionSchema } from '@lotusengine/schemas'
 import BaseAction from '../base/actionComponent'
 

@@ -1,11 +1,11 @@
 import { mkdir, outputJson, remove } from 'fs-extra'
 import { resolve } from 'path'
 import {
+  CONFIG_NAME,
   readConfig,
-  validateConfiguration,
-  CONFIG_NAME
-} from '#stacker/src/lib/config/configManager'
-import { Config } from '#stacker/src/types/config'
+  validateConfiguration
+} from 'stacker/src/lib/config/configManager'
+import { Config } from 'stacker/src/types/config'
 
 describe('Config manager', () => {
   it('readConfig() loads configuration from file', async () => {

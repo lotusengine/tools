@@ -1,4 +1,4 @@
-import { stringifyData } from '#stacker/src/lib/utils/dataUtils'
+import { stringifyData } from 'stacker/src/lib/utils/dataUtils'
 
 describe('Data utils', () => {
   const data = {

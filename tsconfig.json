@@ -1,11 +1,20 @@
 {
   "extends": "@lotusengine/tsconfig/tsconfig.json",
+  "typedocOptions": {
+    "out": "docs",
+    "plugin": [
+      "typedoc-plugin-markdown",
+      "typedoc-github-wiki-theme",
+      "typedoc-plugin-missing-exports"
+    ],
+    "theme": "github-wiki"
+  },
   "compilerOptions": {
     "rootDir": ".",
     "baseUrl": "packages",
     "paths": {
       "@lotusengine/*": ["*/src"],
-      "#constructs/*": ["constructs/src/*"],
+      "#stacker/*": ["./stacker/src/*"],
       "#schemas/*": ["./schemas/src/*"],
       "#types/*": ["./types/src/*"],
       "#sdk/*": ["./sdk/src/*"],

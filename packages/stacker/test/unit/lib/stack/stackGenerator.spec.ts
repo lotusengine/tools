@@ -5,7 +5,7 @@ import {
   loadStackData,
   prepareStack,
   prepareStackData
-} from '#stacker/lib/stack/stackGenerator'
+} from 'stacker/src/lib/stack/stackGenerator'
 
 describe('Stack generator', () => {
   const stack: StackModel = {

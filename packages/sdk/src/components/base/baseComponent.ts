@@ -1,9 +1,9 @@
 import hash from 'object-hash'
-import { ExtendedSchema } from '@lotusengine/schemas'
-import { validateData } from '#core/lib/validatorUtils'
+//import { ExtendedSchema } from '@lotusengine/schemas'
+//import { validateData } from '#core/lib/validatorUtils'
 
 export default abstract class Base {
-  abstract schema: ExtendedSchema
+  abstract schema: any
 
   // Create hash from schema
   generateHash(): string {
@@ -13,6 +13,6 @@ export default abstract class Base {
   abstract getData(): unknown
 
   validateData<T extends unknown>(data: T): T {
-    return validateData<T>(this.schema, data)
+    return data //validateData<T>(this.schema, data)
   }
 }
