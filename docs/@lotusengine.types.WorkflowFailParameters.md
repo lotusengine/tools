@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[packages/types/src/types/workflow.ts:210](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/workflow.ts#L210)
+[packages/types/src/types/workflow.ts:210](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/workflow.ts#L210)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/workflow.ts:211](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/workflow.ts#L211)
+[packages/types/src/types/workflow.ts:211](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/workflow.ts#L211)

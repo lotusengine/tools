@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[packages/core/src/types/error.ts:10](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/types/error.ts#L10)
+[packages/core/src/types/error.ts:10](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/types/error.ts#L10)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/types/error.ts:11](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/types/error.ts#L11)
+[packages/core/src/types/error.ts:11](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/types/error.ts#L11)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/types/error.ts:12](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/types/error.ts#L12)
+[packages/core/src/types/error.ts:12](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/types/error.ts#L12)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/types/error.ts:9](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/types/error.ts#L9)
+[packages/core/src/types/error.ts:9](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/types/error.ts#L9)
 
 ___
 
@@ -60,4 +60,4 @@ ___
 
 #### Defined in
 
-[packages/core/src/types/error.ts:8](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/types/error.ts#L8)
+[packages/core/src/types/error.ts:8](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/types/error.ts#L8)

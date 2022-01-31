@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[packages/types/src/types/action.ts:300](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/action.ts#L300)
+[packages/types/src/types/action.ts:300](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/action.ts#L300)
 
 ___
 
@@ -35,4 +35,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/action.ts:295](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/action.ts#L295)
+[packages/types/src/types/action.ts:295](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/action.ts#L295)

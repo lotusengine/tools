@@ -22,7 +22,7 @@
 
 #### Defined in
 
-[packages/types/src/types/action.ts:247](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/action.ts#L247)
+[packages/types/src/types/action.ts:247](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/action.ts#L247)
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/action.ts:248](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/action.ts#L248)
+[packages/types/src/types/action.ts:248](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/action.ts#L248)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/action.ts:251](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/action.ts#L251)
+[packages/types/src/types/action.ts:251](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/action.ts#L251)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/action.ts:250](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/action.ts#L250)
+[packages/types/src/types/action.ts:250](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/action.ts#L250)
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/action.ts:245](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/action.ts#L245)
+[packages/types/src/types/action.ts:245](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/action.ts#L245)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/action.ts:249](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/action.ts#L249)
+[packages/types/src/types/action.ts:249](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/action.ts#L249)
 
 ___
 
@@ -82,4 +82,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/action.ts:246](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/action.ts#L246)
+[packages/types/src/types/action.ts:246](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/action.ts#L246)

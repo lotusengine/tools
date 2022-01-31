@@ -83,7 +83,7 @@ Error.constructor
 
 #### Defined in
 
-[packages/core/src/lib/coreError.ts:7](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/lib/coreError.ts#L7)
+[packages/core/src/lib/coreError.ts:7](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/lib/coreError.ts#L7)
 
 ## Properties
 
@@ -238,7 +238,7 @@ ILotusError.getChainOfCausation
 
 #### Defined in
 
-[packages/core/src/lib/coreError.ts:86](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/lib/coreError.ts#L86)
+[packages/core/src/lib/coreError.ts:86](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/lib/coreError.ts#L86)
 
 ___
 
@@ -256,7 +256,7 @@ ILotusError.getCode
 
 #### Defined in
 
-[packages/core/src/lib/coreError.ts:57](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/lib/coreError.ts#L57)
+[packages/core/src/lib/coreError.ts:57](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/lib/coreError.ts#L57)
 
 ___
 
@@ -274,7 +274,7 @@ ILotusError.getData
 
 #### Defined in
 
-[packages/core/src/lib/coreError.ts:53](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/lib/coreError.ts#L53)
+[packages/core/src/lib/coreError.ts:53](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/lib/coreError.ts#L53)
 
 ___
 
@@ -292,7 +292,7 @@ ILotusError.getMessage
 
 #### Defined in
 
-[packages/core/src/lib/coreError.ts:45](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/lib/coreError.ts#L45)
+[packages/core/src/lib/coreError.ts:45](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/lib/coreError.ts#L45)
 
 ___
 
@@ -310,7 +310,7 @@ ILotusError.getName
 
 #### Defined in
 
-[packages/core/src/lib/coreError.ts:49](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/lib/coreError.ts#L49)
+[packages/core/src/lib/coreError.ts:49](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/lib/coreError.ts#L49)
 
 ___
 
@@ -335,7 +335,7 @@ ILotusError.getSafeOutput
 
 #### Defined in
 
-[packages/core/src/lib/coreError.ts:77](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/lib/coreError.ts#L77)
+[packages/core/src/lib/coreError.ts:77](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/lib/coreError.ts#L77)
 
 ___
 
@@ -353,7 +353,7 @@ ILotusError.getTraces
 
 #### Defined in
 
-[packages/core/src/lib/coreError.ts:41](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/lib/coreError.ts#L41)
+[packages/core/src/lib/coreError.ts:41](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/lib/coreError.ts#L41)
 
 ___
 
@@ -371,7 +371,7 @@ ILotusError.getType
 
 #### Defined in
 
-[packages/core/src/lib/coreError.ts:61](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/lib/coreError.ts#L61)
+[packages/core/src/lib/coreError.ts:61](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/lib/coreError.ts#L61)
 
 ___
 
@@ -399,7 +399,7 @@ ILotusError.toObject
 
 #### Defined in
 
-[packages/core/src/lib/coreError.ts:65](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/lib/coreError.ts#L65)
+[packages/core/src/lib/coreError.ts:65](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/lib/coreError.ts#L65)
 
 ___
 
@@ -417,7 +417,7 @@ ILotusError.toString
 
 #### Defined in
 
-[packages/core/src/lib/coreError.ts:37](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/lib/coreError.ts#L37)
+[packages/core/src/lib/coreError.ts:37](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/lib/coreError.ts#L37)
 
 ___
 
@@ -464,4 +464,4 @@ ___
 
 #### Defined in
 
-[packages/core/src/lib/coreError.ts:18](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/lib/coreError.ts#L18)
+[packages/core/src/lib/coreError.ts:18](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/lib/coreError.ts#L18)

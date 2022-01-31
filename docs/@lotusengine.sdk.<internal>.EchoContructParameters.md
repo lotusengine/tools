@@ -29,7 +29,7 @@ Modify.next
 
 #### Defined in
 
-[packages/sdk/src/types/common.ts:9](https://github.com/lotusengine/sdk/blob/f1f5297/packages/sdk/src/types/common.ts#L9)
+[packages/sdk/src/types/common.ts:9](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/sdk/src/types/common.ts#L9)
 
 ___
 
@@ -43,7 +43,7 @@ Modify.output
 
 #### Defined in
 
-[packages/types/src/types/action.ts:196](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/action.ts#L196)
+[packages/types/src/types/action.ts:196](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/action.ts#L196)
 
 ___
 
@@ -57,7 +57,7 @@ Modify.payload
 
 #### Defined in
 
-[packages/types/src/types/action.ts:193](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/action.ts#L193)
+[packages/types/src/types/action.ts:193](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/action.ts#L193)
 
 ___
 
@@ -71,4 +71,4 @@ Modify.result
 
 #### Defined in
 
-[packages/types/src/types/action.ts:195](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/action.ts#L195)
+[packages/types/src/types/action.ts:195](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/action.ts#L195)

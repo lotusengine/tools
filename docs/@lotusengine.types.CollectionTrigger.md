@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[packages/types/src/types/collection.ts:65](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/collection.ts#L65)
+[packages/types/src/types/collection.ts:65](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/collection.ts#L65)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/collection.ts:67](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/collection.ts#L67)
+[packages/types/src/types/collection.ts:67](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/collection.ts#L67)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/collection.ts:66](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/collection.ts#L66)
+[packages/types/src/types/collection.ts:66](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/collection.ts#L66)

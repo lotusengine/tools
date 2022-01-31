@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[packages/types/src/types/common.ts:89](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/common.ts#L89)
+[packages/types/src/types/common.ts:89](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/common.ts#L89)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/common.ts:88](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/common.ts#L88)
+[packages/types/src/types/common.ts:88](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/common.ts#L88)

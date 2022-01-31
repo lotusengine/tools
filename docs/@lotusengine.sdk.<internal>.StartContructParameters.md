@@ -27,7 +27,7 @@ Modify.next
 
 #### Defined in
 
-[packages/sdk/src/types/common.ts:12](https://github.com/lotusengine/sdk/blob/f1f5297/packages/sdk/src/types/common.ts#L12)
+[packages/sdk/src/types/common.ts:12](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/sdk/src/types/common.ts#L12)
 
 ___
 
@@ -49,4 +49,4 @@ Modify.triggers
 
 #### Defined in
 
-[packages/types/src/types/action.ts:295](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/action.ts#L295)
+[packages/types/src/types/action.ts:295](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/action.ts#L295)

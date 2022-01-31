@@ -82,7 +82,7 @@ Error.constructor
 
 #### Defined in
 
-[packages/core/src/types/error.ts:24](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/types/error.ts#L24)
+[packages/core/src/types/error.ts:24](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/types/error.ts#L24)
 
 ## Properties
 
@@ -92,7 +92,7 @@ Error.constructor
 
 #### Defined in
 
-[packages/core/src/types/error.ts:23](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/types/error.ts#L23)
+[packages/core/src/types/error.ts:23](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/types/error.ts#L23)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/types/error.ts:20](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/types/error.ts#L20)
+[packages/core/src/types/error.ts:20](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/types/error.ts#L20)
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/types/error.ts:21](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/types/error.ts#L21)
+[packages/core/src/types/error.ts:21](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/types/error.ts#L21)
 
 ___
 
@@ -134,7 +134,7 @@ Error.message
 
 #### Defined in
 
-[packages/core/src/types/error.ts:22](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/types/error.ts#L22)
+[packages/core/src/types/error.ts:22](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/types/error.ts#L22)
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/types/error.ts:19](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/types/error.ts#L19)
+[packages/core/src/types/error.ts:19](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/types/error.ts#L19)
 
 ___
 
@@ -241,7 +241,7 @@ node_modules/@types/node/globals.d.ts:13
 
 #### Defined in
 
-[packages/core/src/types/error.ts:54](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/types/error.ts#L54)
+[packages/core/src/types/error.ts:54](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/types/error.ts#L54)
 
 ___
 
@@ -255,7 +255,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/types/error.ts:34](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/types/error.ts#L34)
+[packages/core/src/types/error.ts:34](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/types/error.ts#L34)
 
 ___
 
@@ -269,7 +269,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/types/error.ts:37](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/types/error.ts#L37)
+[packages/core/src/types/error.ts:37](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/types/error.ts#L37)
 
 ___
 
@@ -283,7 +283,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/types/error.ts:36](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/types/error.ts#L36)
+[packages/core/src/types/error.ts:36](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/types/error.ts#L36)
 
 ___
 
@@ -297,7 +297,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/types/error.ts:33](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/types/error.ts#L33)
+[packages/core/src/types/error.ts:33](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/types/error.ts#L33)
 
 ___
 
@@ -318,7 +318,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/types/error.ts:48](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/types/error.ts#L48)
+[packages/core/src/types/error.ts:48](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/types/error.ts#L48)
 
 ___
 
@@ -332,7 +332,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/types/error.ts:32](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/types/error.ts#L32)
+[packages/core/src/types/error.ts:32](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/types/error.ts#L32)
 
 ___
 
@@ -346,7 +346,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/types/error.ts:35](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/types/error.ts#L35)
+[packages/core/src/types/error.ts:35](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/types/error.ts#L35)
 
 ___
 
@@ -370,7 +370,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/types/error.ts:38](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/types/error.ts#L38)
+[packages/core/src/types/error.ts:38](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/types/error.ts#L38)
 
 ___
 
@@ -384,7 +384,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/types/error.ts:31](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/types/error.ts#L31)
+[packages/core/src/types/error.ts:31](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/types/error.ts#L31)
 
 ___
 

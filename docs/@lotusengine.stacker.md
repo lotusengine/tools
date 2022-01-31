@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[packages/stacker/src/lib/config/configManager.ts:7](https://github.com/lotusengine/sdk/blob/f1f5297/packages/stacker/src/lib/config/configManager.ts#L7)
+[packages/stacker/src/lib/config/configManager.ts:7](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/stacker/src/lib/config/configManager.ts#L7)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[packages/stacker/src/lib/stack/stackGenerator.ts:19](https://github.com/lotusengine/sdk/blob/f1f5297/packages/stacker/src/lib/stack/stackGenerator.ts#L19)
+[packages/stacker/src/lib/stack/stackGenerator.ts:19](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/stacker/src/lib/stack/stackGenerator.ts#L19)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[packages/stacker/src/lib/stack/stackGenerator.ts:20](https://github.com/lotusengine/sdk/blob/f1f5297/packages/stacker/src/lib/stack/stackGenerator.ts#L20)
+[packages/stacker/src/lib/stack/stackGenerator.ts:20](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/stacker/src/lib/stack/stackGenerator.ts#L20)
 
 ## Functions
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[packages/stacker/src/lib/stack/stackGenerator.ts:88](https://github.com/lotusengine/sdk/blob/f1f5297/packages/stacker/src/lib/stack/stackGenerator.ts#L88)
+[packages/stacker/src/lib/stack/stackGenerator.ts:88](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/stacker/src/lib/stack/stackGenerator.ts#L88)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[packages/stacker/src/lib/stack/stackGenerator.ts:64](https://github.com/lotusengine/sdk/blob/f1f5297/packages/stacker/src/lib/stack/stackGenerator.ts#L64)
+[packages/stacker/src/lib/stack/stackGenerator.ts:64](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/stacker/src/lib/stack/stackGenerator.ts#L64)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[packages/stacker/src/lib/stack/stackGenerator.ts:81](https://github.com/lotusengine/sdk/blob/f1f5297/packages/stacker/src/lib/stack/stackGenerator.ts#L81)
+[packages/stacker/src/lib/stack/stackGenerator.ts:81](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/stacker/src/lib/stack/stackGenerator.ts#L81)
 
 ___
 
@@ -133,7 +133,7 @@ ___
 
 #### Defined in
 
-[packages/stacker/src/lib/stack/stackGenerator.ts:23](https://github.com/lotusengine/sdk/blob/f1f5297/packages/stacker/src/lib/stack/stackGenerator.ts#L23)
+[packages/stacker/src/lib/stack/stackGenerator.ts:23](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/stacker/src/lib/stack/stackGenerator.ts#L23)
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-[packages/stacker/src/lib/stack/stackGenerator.ts:32](https://github.com/lotusengine/sdk/blob/f1f5297/packages/stacker/src/lib/stack/stackGenerator.ts#L32)
+[packages/stacker/src/lib/stack/stackGenerator.ts:32](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/stacker/src/lib/stack/stackGenerator.ts#L32)
 
 ___
 
@@ -173,7 +173,7 @@ ___
 
 #### Defined in
 
-[packages/stacker/src/lib/stack/stackGenerator.ts:76](https://github.com/lotusengine/sdk/blob/f1f5297/packages/stacker/src/lib/stack/stackGenerator.ts#L76)
+[packages/stacker/src/lib/stack/stackGenerator.ts:76](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/stacker/src/lib/stack/stackGenerator.ts#L76)
 
 ___
 
@@ -193,7 +193,7 @@ ___
 
 #### Defined in
 
-[packages/stacker/src/lib/stack/stackGenerator.ts:57](https://github.com/lotusengine/sdk/blob/f1f5297/packages/stacker/src/lib/stack/stackGenerator.ts#L57)
+[packages/stacker/src/lib/stack/stackGenerator.ts:57](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/stacker/src/lib/stack/stackGenerator.ts#L57)
 
 ___
 
@@ -213,7 +213,7 @@ ___
 
 #### Defined in
 
-[packages/stacker/src/lib/config/configManager.ts:10](https://github.com/lotusengine/sdk/blob/f1f5297/packages/stacker/src/lib/config/configManager.ts#L10)
+[packages/stacker/src/lib/config/configManager.ts:10](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/stacker/src/lib/config/configManager.ts#L10)
 
 ___
 
@@ -233,4 +233,4 @@ ___
 
 #### Defined in
 
-[packages/stacker/src/lib/config/configManager.ts:16](https://github.com/lotusengine/sdk/blob/f1f5297/packages/stacker/src/lib/config/configManager.ts#L16)
+[packages/stacker/src/lib/config/configManager.ts:16](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/stacker/src/lib/config/configManager.ts#L16)

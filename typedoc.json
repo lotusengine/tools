@@ -1,0 +1,11 @@
+{
+  "name": "SDK Documentation",
+  "excludeInternal": true,
+  "out": "docs",
+  "plugin": [
+    "typedoc-plugin-markdown",
+    "typedoc-github-wiki-theme",
+    "typedoc-plugin-missing-exports"
+  ],
+  "theme": "github-wiki"
+}

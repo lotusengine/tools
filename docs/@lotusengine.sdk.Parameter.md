@@ -46,7 +46,7 @@
 
 #### Defined in
 
-[packages/sdk/src/components/core/parameterComponent.ts:5](https://github.com/lotusengine/sdk/blob/f1f5297/packages/sdk/src/components/core/parameterComponent.ts#L5)
+[packages/sdk/src/components/core/parameterComponent.ts:5](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/sdk/src/components/core/parameterComponent.ts#L5)
 
 ## Methods
 
@@ -64,7 +64,7 @@
 
 #### Defined in
 
-[packages/sdk/src/components/base/baseComponent.ts:9](https://github.com/lotusengine/sdk/blob/f1f5297/packages/sdk/src/components/base/baseComponent.ts#L9)
+[packages/sdk/src/components/base/baseComponent.ts:9](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/sdk/src/components/base/baseComponent.ts#L9)
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[packages/sdk/src/components/core/parameterComponent.ts:7](https://github.com/lotusengine/sdk/blob/f1f5297/packages/sdk/src/components/core/parameterComponent.ts#L7)
+[packages/sdk/src/components/core/parameterComponent.ts:7](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/sdk/src/components/core/parameterComponent.ts#L7)
 
 ___
 
@@ -112,4 +112,4 @@ ___
 
 #### Defined in
 
-[packages/sdk/src/components/base/baseComponent.ts:15](https://github.com/lotusengine/sdk/blob/f1f5297/packages/sdk/src/components/base/baseComponent.ts#L15)
+[packages/sdk/src/components/base/baseComponent.ts:15](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/sdk/src/components/base/baseComponent.ts#L15)

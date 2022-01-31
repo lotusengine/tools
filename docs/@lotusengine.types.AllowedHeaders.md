@@ -22,7 +22,7 @@
 
 #### Defined in
 
-[packages/types/src/types/common.ts:11](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/common.ts#L11)
+[packages/types/src/types/common.ts:11](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/common.ts#L11)
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/common.ts:14](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/common.ts#L14)
+[packages/types/src/types/common.ts:14](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/common.ts#L14)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/common.ts:12](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/common.ts#L12)
+[packages/types/src/types/common.ts:12](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/common.ts#L12)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/common.ts:10](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/common.ts#L10)
+[packages/types/src/types/common.ts:10](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/common.ts#L10)
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/common.ts:13](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/common.ts#L13)
+[packages/types/src/types/common.ts:13](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/common.ts#L13)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/common.ts:9](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/common.ts#L9)
+[packages/types/src/types/common.ts:9](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/common.ts#L9)
 
 ___
 
@@ -82,4 +82,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/common.ts:15](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/common.ts#L15)
+[packages/types/src/types/common.ts:15](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/common.ts#L15)

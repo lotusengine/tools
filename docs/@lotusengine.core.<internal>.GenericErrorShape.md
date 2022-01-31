@@ -35,7 +35,7 @@
 
 #### Defined in
 
-[packages/core/src/types/error.ts:5](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/types/error.ts#L5)
+[packages/core/src/types/error.ts:5](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/types/error.ts#L5)
 
 ___
 

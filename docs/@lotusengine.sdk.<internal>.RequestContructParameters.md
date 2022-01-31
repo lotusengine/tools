@@ -33,7 +33,7 @@ Modify.headers
 
 #### Defined in
 
-[packages/types/src/types/action.ts:265](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/action.ts#L265)
+[packages/types/src/types/action.ts:265](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/action.ts#L265)
 
 ___
 
@@ -47,7 +47,7 @@ Modify.method
 
 #### Defined in
 
-[packages/types/src/types/action.ts:264](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/action.ts#L264)
+[packages/types/src/types/action.ts:264](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/action.ts#L264)
 
 ___
 
@@ -61,7 +61,7 @@ Modify.next
 
 #### Defined in
 
-[packages/sdk/src/types/common.ts:15](https://github.com/lotusengine/sdk/blob/f1f5297/packages/sdk/src/types/common.ts#L15)
+[packages/sdk/src/types/common.ts:15](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/sdk/src/types/common.ts#L15)
 
 ___
 
@@ -81,7 +81,7 @@ Modify.options
 
 #### Defined in
 
-[packages/types/src/types/action.ts:267](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/action.ts#L267)
+[packages/types/src/types/action.ts:267](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/action.ts#L267)
 
 ___
 
@@ -95,7 +95,7 @@ Modify.output
 
 #### Defined in
 
-[packages/types/src/types/action.ts:263](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/action.ts#L263)
+[packages/types/src/types/action.ts:263](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/action.ts#L263)
 
 ___
 
@@ -109,7 +109,7 @@ Modify.query
 
 #### Defined in
 
-[packages/types/src/types/action.ts:266](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/action.ts#L266)
+[packages/types/src/types/action.ts:266](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/action.ts#L266)
 
 ___
 
@@ -123,7 +123,7 @@ Modify.result
 
 #### Defined in
 
-[packages/types/src/types/action.ts:262](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/action.ts#L262)
+[packages/types/src/types/action.ts:262](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/action.ts#L262)
 
 ___
 
@@ -137,4 +137,4 @@ Modify.url
 
 #### Defined in
 
-[packages/types/src/types/action.ts:260](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/action.ts#L260)
+[packages/types/src/types/action.ts:260](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/action.ts#L260)

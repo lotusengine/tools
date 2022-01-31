@@ -41,7 +41,7 @@
 
 #### Defined in
 
-[packages/types/src/types/events.ts:3](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/events.ts#L3)
+[packages/types/src/types/events.ts:3](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/events.ts#L3)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/events.ts:4](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/events.ts#L4)
+[packages/types/src/types/events.ts:4](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/events.ts#L4)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/events.ts:5](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/events.ts#L5)
+[packages/types/src/types/events.ts:5](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/events.ts#L5)
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/events.ts:6](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/events.ts#L6)
+[packages/types/src/types/events.ts:6](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/events.ts#L6)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/events.ts:7](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/events.ts#L7)
+[packages/types/src/types/events.ts:7](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/events.ts#L7)
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/events.ts:8](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/events.ts#L8)
+[packages/types/src/types/events.ts:8](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/events.ts#L8)
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/events.ts:9](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/events.ts#L9)
+[packages/types/src/types/events.ts:9](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/events.ts#L9)
 
 ___
 
@@ -111,7 +111,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/events.ts:10](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/events.ts#L10)
+[packages/types/src/types/events.ts:10](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/events.ts#L10)
 
 ___
 
@@ -121,7 +121,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/events.ts:11](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/events.ts#L11)
+[packages/types/src/types/events.ts:11](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/events.ts#L11)
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/events.ts:12](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/events.ts#L12)
+[packages/types/src/types/events.ts:12](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/events.ts#L12)
 
 ___
 
@@ -141,7 +141,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/events.ts:13](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/events.ts#L13)
+[packages/types/src/types/events.ts:13](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/events.ts#L13)
 
 ___
 
@@ -151,7 +151,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/events.ts:14](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/events.ts#L14)
+[packages/types/src/types/events.ts:14](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/events.ts#L14)
 
 ___
 
@@ -161,7 +161,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/events.ts:15](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/events.ts#L15)
+[packages/types/src/types/events.ts:15](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/events.ts#L15)
 
 ___
 
@@ -171,7 +171,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/events.ts:16](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/events.ts#L16)
+[packages/types/src/types/events.ts:16](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/events.ts#L16)
 
 ___
 
@@ -181,7 +181,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/events.ts:17](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/events.ts#L17)
+[packages/types/src/types/events.ts:17](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/events.ts#L17)
 
 ___
 
@@ -191,7 +191,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/events.ts:18](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/events.ts#L18)
+[packages/types/src/types/events.ts:18](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/events.ts#L18)
 
 ___
 
@@ -201,7 +201,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/events.ts:19](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/events.ts#L19)
+[packages/types/src/types/events.ts:19](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/events.ts#L19)
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/events.ts:20](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/events.ts#L20)
+[packages/types/src/types/events.ts:20](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/events.ts#L20)
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/events.ts:21](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/events.ts#L21)
+[packages/types/src/types/events.ts:21](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/events.ts#L21)
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/events.ts:22](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/events.ts#L22)
+[packages/types/src/types/events.ts:22](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/events.ts#L22)
 
 ___
 
@@ -241,7 +241,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/events.ts:23](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/events.ts#L23)
+[packages/types/src/types/events.ts:23](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/events.ts#L23)
 
 ___
 
@@ -251,7 +251,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/events.ts:24](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/events.ts#L24)
+[packages/types/src/types/events.ts:24](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/events.ts#L24)
 
 ___
 
@@ -261,7 +261,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/events.ts:25](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/events.ts#L25)
+[packages/types/src/types/events.ts:25](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/events.ts#L25)
 
 ___
 
@@ -271,7 +271,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/events.ts:26](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/events.ts#L26)
+[packages/types/src/types/events.ts:26](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/events.ts#L26)
 
 ___
 
@@ -281,7 +281,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/events.ts:27](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/events.ts#L27)
+[packages/types/src/types/events.ts:27](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/events.ts#L27)
 
 ___
 
@@ -291,4 +291,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/events.ts:28](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/events.ts#L28)
+[packages/types/src/types/events.ts:28](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/events.ts#L28)

@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[packages/types/src/types/action.ts:273](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/action.ts#L273)
+[packages/types/src/types/action.ts:273](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/action.ts#L273)

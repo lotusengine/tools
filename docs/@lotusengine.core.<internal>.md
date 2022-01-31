@@ -280,7 +280,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/types/error.ts:1](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/types/error.ts#L1)
+[packages/core/src/types/error.ts:1](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/types/error.ts#L1)
 
 ___
 
@@ -354,7 +354,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/types/error.ts:3](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/types/error.ts#L3)
+[packages/core/src/types/error.ts:3](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/types/error.ts#L3)
 
 ___
 
@@ -743,7 +743,7 @@ ___
 
 #### Defined in
 
-[packages/core/src/types/common.ts:5](https://github.com/lotusengine/sdk/blob/f1f5297/packages/core/src/types/common.ts#L5)
+[packages/core/src/types/common.ts:5](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/core/src/types/common.ts#L5)
 
 ___
 

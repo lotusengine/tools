@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[packages/types/src/types/action.ts:279](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/action.ts#L279)
+[packages/types/src/types/action.ts:279](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/action.ts#L279)
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/action.ts:280](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/action.ts#L280)
+[packages/types/src/types/action.ts:280](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/action.ts#L280)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/action.ts:277](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/action.ts#L277)
+[packages/types/src/types/action.ts:277](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/action.ts#L277)
 
 ___
 
@@ -49,4 +49,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/types/action.ts:278](https://github.com/lotusengine/sdk/blob/f1f5297/packages/types/src/types/action.ts#L278)
+[packages/types/src/types/action.ts:278](https://github.com/lotusengine/sdk/blob/fdb90a3/packages/types/src/types/action.ts#L278)
