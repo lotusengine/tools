@@ -1,4 +1,4 @@
-import { LotusError } from '#core/lib/coreError'
+import { LotusError } from "@lotusengine/core"
 
 // Missing action parameters
 export class ActionParameterError extends LotusError {

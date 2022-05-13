@@ -1,4 +1,3 @@
-
 export type HTTPHeaders = NodeJS.Dict<string | string[]>
 
 export type AllowedHeadersMap = { [key in AllowedHeaders]?: string }
@@ -23,8 +22,6 @@ export type SimpleError = {
 }
 
 export type CommonKey = string
-
-
 
 export type UUID = string
 export type Email = string
@@ -53,7 +50,6 @@ export type Data = ObjectLiteral | ObjectLiteral[] | string[]
 export type JsonStruture = Json[] | { [key: string]: Json }
 export type JsonStructObject = JsonStruture
 export type JsonStructArray = Json[]
-
 
 // Range data alias (2 m, 4 hours, etc)
 export type Interval = string
@@ -93,8 +89,11 @@ export interface OptionsSchema {
   [key: string]: OptionSchema
 }
 
-export interface Meta {
-  author?: string
-  url?: string
-}
-
+export type ComponentType =
+  | 'Stack'
+  | 'Service'
+  | 'Module'
+  | 'Parameter'
+  | 'Workflow'
+  | 'Collection'
+  | 'View'

@@ -1,10 +1,5 @@
-import { ISO8601DateTime, Meta, OptionsSchema, URL, UUID } from './common'
-
-export enum ModuleScope {
-  PRIVATE = 'private',
-  SECRET = 'secret',
-  PUBLIC = 'public'
-}
+import { ISO8601DateTime, OptionsSchema, URL, UUID } from './common'
+import { ModuleScope, Meta } from './graphql'
 
 export type ModuleModel = {
   id: UUID
@@ -41,7 +36,6 @@ export type ModuleCreateInput = {
   options?: OptionsSchema
   events?: ModuleEvents
 }
-
 
 export type ModuleUpdateInput = {
   id: UUID

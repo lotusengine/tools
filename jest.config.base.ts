@@ -19,9 +19,7 @@ export default {
   },
   moduleNameMapper: {
     '@lotusengine/(.*)': [join(__dirname, 'packages/$1/src')],
-    '(constructs|schemas|sdk|types|core)/src/(.*)': [
-      join(__dirname, 'packages/$1/src/$2')
-    ]
+    '(schemas|sdk|types|core)/src/(.*)': [join(__dirname, 'packages/$1/src/$2')]
   },
   modulePaths: ['<rootDir>/src', '<rootDir>/test', '<rootDir>'],
   preset: 'ts-jest'

@@ -1,0 +1,9 @@
+overwrite: true
+schema:
+  - ../Core/test/helpers/appSyncMocker/awsSchemaDirectives.graphql
+  - ../Core/graphql/public/schema.graphql
+generates:
+  packages/types/src/types/graphql.ts:
+    plugins:
+      - 'typescript'
+      - 'typescript-resolvers'

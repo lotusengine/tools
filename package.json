@@ -17,15 +17,17 @@
     "test:watch": "jest --watch",
     "verify": "yarn lint && yarn build && yarn depcheck && yarn coverage && yarn bundle",
     "watch": "yarn test:watch",
-    "docs": "npx typedoc --entryPointStrategy packages ."
+    "generate-types": "graphql-codegen"
   },
   "prettier": "@lotusengine/prettier-config",
   "dependencies": {},
   "devDependencies": {
     "@changesets/cli": "^2.17.0",
+    "@graphql-codegen/cli": "^2.6.2",
+    "@graphql-codegen/typescript": "^2.4.11",
+    "@graphql-codegen/typescript-resolvers": "^2.6.4",
     "@lotusengine/eslint-config-lotusengine": "^1.1.0",
     "@lotusengine/prettier-config": "^1.1.0",
-    "@lotusengine/plugin-typedoc": "file:/Users/Yashua/LotusEngine/Code/TypeDoc Theme/dist",
     "@lotusengine/tsconfig": "^1.1.6",
     "@tsconfig/node14": "^1.0.0",
     "@types/fs-extra": "^9.0.12",
@@ -33,6 +35,7 @@
     "@types/node": "^16.7.10",
     "dependency-check": "^4.1.0",
     "eslint": "^7.20.0",
+    "graphql": "^16.5.0",
     "jest": "^27.1.0",
     "lerna": "^4.0.0",
     "prettier": "^2.2.1",
@@ -41,10 +44,6 @@
     "ts-node": "^10.2.1",
     "tsc": "^2.0.3",
     "tsconfig-paths": "^3.11.0",
-    "typedoc": "^0.22.10",
-    "typedoc-github-wiki-theme": "^1.0.0",
-    "typedoc-plugin-markdown": "^3.11.11",
-    "typedoc-plugin-missing-exports": "^0.22.6",
     "typescript": "^4.4.2"
   }
 }

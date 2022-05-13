@@ -1,11 +1,11 @@
 import { ObjectHash, ISO8601DateTime, UUID, JSONData } from './common'
 import { DynamicForm } from './form'
 
-export interface ServiceSettings {
+export interface ServiceParameters {
   [k: string]: string
 }
 
-export type ServiceDefinition = DynamicForm
+export type ServiceSettings = DynamicForm
 
 export type ServiceDomain = string
 
@@ -21,8 +21,8 @@ export type ServiceModel = {
   label?: string
   summary?: string
   description?: string
-  parameters?: ServiceSettings
-  settings?: ServiceDefinition
+  parameters?: ServiceParameters
+  settings?: ServiceSettings
   domain?: ServiceDomain
 }
 
@@ -30,8 +30,8 @@ export type ServiceStackModel = {
   label?: string
   summary?: string
   description?: string
-  parameters?: ServiceSettings
-  settings?: ServiceDefinition
+  parameters?: ServiceParameters
+  settings?: ServiceSettings
   domain?: ServiceDomain
 }
 

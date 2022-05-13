@@ -1,8 +1,8 @@
 import { ExtendedSchema, serviceSchema } from '@lotusengine/schemas'
 import Base from '../base/baseComponent'
 import {
-  ServiceDefinition,
   ServiceSettings,
+  ServiceParameters,
   ServiceStackModel
 } from '@lotusengine/types'
 
@@ -21,8 +21,8 @@ export default class Service extends Base {
   label: string | undefined
   summary: string | undefined
   description: string | undefined
-  parameters: ServiceSettings = {}
-  settings: ServiceDefinition = []
+  parameters: ServiceParameters = {}
+  settings: ServiceSettings = []
 
   setLabel(label: string): this {
     this.label = label
@@ -51,21 +51,21 @@ export default class Service extends Base {
     return this.description
   }
 
-  setSettings(parameters: ServiceSettings): this {
+  setParameters(parameters: ServiceParameters): this {
     this.parameters = parameters
     return this
   }
 
-  getSettings(): ServiceSettings | undefined {
+  getParameters(): ServiceParameters | undefined {
     return this.parameters
   }
 
-  setDefinition(settings: ServiceDefinition): this {
+  setSettings(settings: ServiceSettings): this {
     this.settings = settings
     return this
   }
 
-  getDefinition(): ServiceDefinition | undefined {
+  getSettings(): ServiceSettings | undefined {
     return this.settings
   }
 
@@ -74,8 +74,8 @@ export default class Service extends Base {
       label: this.getLabel(),
       summary: this.getSummary(),
       description: this.getDescription(),
-      parameters: this.getSettings(),
-      settings: this.getDefinition()
+      parameters: this.getParameters(),
+      settings: this.getSettings()
     }
   }
 }
