@@ -54,3 +54,6 @@ tmp/
 
 ## Codegen
 ./codegen.yml
+
+## Notes
+NOTES.md

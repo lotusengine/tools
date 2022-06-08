@@ -27,6 +27,7 @@ export type UUID = string
 export type Email = string
 export type ISO8601Date = string
 export type ISO8601DateTime = string
+export type ISO8601Time = string
 export type URL = string
 export type JSONQuery = string
 export type JSONData = string

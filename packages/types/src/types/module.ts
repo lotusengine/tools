@@ -1,5 +1,5 @@
 import { ISO8601DateTime, OptionsSchema, URL, UUID } from './common'
-import { ModuleScope, Meta } from './graphql'
+import { Meta, ModuleScope } from './graphql'
 
 export type ModuleModel = {
   id: UUID
@@ -11,6 +11,7 @@ export type ModuleModel = {
   summary?: string
   description?: string
   repository?: URL
+  source?: string
   hash?: string // Commit hash
   meta?: Meta
   options?: OptionsSchema
@@ -32,6 +33,7 @@ export type ModuleCreateInput = {
   summary?: string
   description?: string
   repository?: URL
+  source?: string
   meta?: Meta
   options?: OptionsSchema
   events?: ModuleEvents
@@ -44,6 +46,7 @@ export type ModuleUpdateInput = {
   summary?: string
   description?: string
   repository?: URL
+  source?: string
   meta?: Meta
   options?: OptionsSchema
   events?: ModuleEvents
