@@ -56,6 +56,22 @@ export type AccountUsage = {
   storage: Scalars['Int'];
 };
 
+export type Asset = Node & {
+  __typename?: 'Asset';
+  createdAt?: Maybe<Scalars['AWSDateTime']>;
+  id: Scalars['ID'];
+  label?: Maybe<Scalars['String']>;
+  type?: Maybe<Scalars['String']>;
+  updatedAt?: Maybe<Scalars['AWSDateTime']>;
+  url?: Maybe<Scalars['String']>;
+};
+
+export type AssetConnection = {
+  __typename?: 'AssetConnection';
+  nextToken?: Maybe<Scalars['String']>;
+  nodes?: Maybe<Array<Maybe<Asset>>>;
+};
+
 export type BatchCreateItem = {
   collectionId: Scalars['ID'];
   data: Scalars['AWSJSON'];
@@ -138,6 +154,18 @@ export enum CollectionInsightInterval {
 export type CollectionUsage = {
   __typename?: 'CollectionUsage';
   storage?: Maybe<Scalars['Int']>;
+};
+
+export type CreateAssetInput = {
+  label?: InputMaybe<Scalars['String']>;
+  type?: InputMaybe<Scalars['String']>;
+};
+
+export type CreateAssetPayload = {
+  __typename?: 'CreateAssetPayload';
+  endpoint?: Maybe<Scalars['AWSURL']>;
+  expiry?: Maybe<Scalars['Int']>;
+  id: Scalars['ID'];
 };
 
 export type CreateCollectionInput = {
@@ -261,6 +289,15 @@ export type DateRangeFilterInput = {
 export type DateTimeRangeFilterInput = {
   end?: InputMaybe<Scalars['AWSDateTime']>;
   start?: InputMaybe<Scalars['AWSDateTime']>;
+};
+
+export type DeleteAssetInput = {
+  id: Scalars['ID'];
+};
+
+export type DeleteAssetPayload = {
+  __typename?: 'DeleteAssetPayload';
+  id?: Maybe<Scalars['ID']>;
 };
 
 export type DeleteCollectionInput = {
@@ -511,19 +548,18 @@ export type Mutation = {
   __typename?: 'Mutation';
   batchCreateItems: BatchCreateItemsPayload;
   batchDeleteItems: BatchDeleteItemsPayload;
+  createAsset: CreateAssetPayload;
   createCollection: CreateCollectionPayload;
   createItem: CreateItemPayload;
   createModule: CreateModulePayload;
-  createPackage: CreatePackagePayload;
-  createPackageFromService: CreatePackagePayload;
   createParameter: CreateParameterPayload;
   createService: CreateServicePayload;
   createView: CreateViewPayload;
   createWorkflow?: Maybe<CreateWorkflowPayload>;
+  deleteAsset: DeleteAssetPayload;
   deleteCollection: DeleteCollectionPayload;
   deleteItem: DeleteItemPayload;
   deleteModule: DeleteModulePayload;
-  deletePackage: DeletePackagePayload;
   deleteParameter: DeleteParameterPayload;
   deleteService: DeleteServicePayload;
   deleteView: DeleteViewPayload;
@@ -533,16 +569,15 @@ export type Mutation = {
   invokeModule: InvokeModulePayload;
   setAccountAccess: SetAccountAccessPayload;
   triggerWorkflow?: Maybe<TriggerWorkflowPayload>;
+  updateAsset: UpdateAssetPayload;
   updateCollection: UpdateCollectionPayload;
   updateItem: UpdateItemPayload;
   updateModule: UpdateModulePayload;
-  updatePackage: UpdatePackagePayload;
   updateParameter: UpdateParameterPayload;
   updateService: UpdateServicePayload;
   updateView: UpdateViewPayload;
   updateWorkflow?: Maybe<UpdateWorkflowPayload>;
   validateCollection: ValidateCollectionPayload;
-  validatePackage: ValidatePackagePayload;
   validateService: ValidateServicePayload;
   validateView: ValidateViewPayload;
   validateWorkflow: ValidateWorkflowPayload;
@@ -559,6 +594,11 @@ export type MutationBatchDeleteItemsArgs = {
 };
 
 
+export type MutationCreateAssetArgs = {
+  input: CreateAssetInput;
+};
+
+
 export type MutationCreateCollectionArgs = {
   input: CreateCollectionInput;
 };
@@ -571,16 +611,6 @@ export type MutationCreateItemArgs = {
 
 export type MutationCreateModuleArgs = {
   input: CreateModuleInput;
-};
-
-
-export type MutationCreatePackageArgs = {
-  input: CreatePackageInput;
-};
-
-
-export type MutationCreatePackageFromServiceArgs = {
-  input: CreatePackageFromServiceInput;
 };
 
 
@@ -604,6 +634,11 @@ export type MutationCreateWorkflowArgs = {
 };
 
 
+export type MutationDeleteAssetArgs = {
+  input: DeleteAssetInput;
+};
+
+
 export type MutationDeleteCollectionArgs = {
   input: DeleteCollectionInput;
 };
@@ -616,11 +651,6 @@ export type MutationDeleteItemArgs = {
 
 export type MutationDeleteModuleArgs = {
   input: DeleteModuleInput;
-};
-
-
-export type MutationDeletePackageArgs = {
-  input: DeletePackageInput;
 };
 
 
@@ -669,6 +699,11 @@ export type MutationTriggerWorkflowArgs = {
 };
 
 
+export type MutationUpdateAssetArgs = {
+  input: UpdateAssetInput;
+};
+
+
 export type MutationUpdateCollectionArgs = {
   input: UpdateCollectionInput;
 };
@@ -681,11 +716,6 @@ export type MutationUpdateItemArgs = {
 
 export type MutationUpdateModuleArgs = {
   input: UpdateModuleInput;
-};
-
-
-export type MutationUpdatePackageArgs = {
-  input: UpdatePackageInput;
 };
 
 
@@ -711,11 +741,6 @@ export type MutationUpdateWorkflowArgs = {
 
 export type MutationValidateCollectionArgs = {
   input: ValidateCollectionInput;
-};
-
-
-export type MutationValidatePackageArgs = {
-  input: ValidatePackageInput;
 };
 
 
@@ -780,6 +805,8 @@ export type ParameterConnection = {
 export type Query = {
   __typename?: 'Query';
   account?: Maybe<Account>;
+  asset: Asset;
+  assets: AssetConnection;
   collection: Collection;
   collections: CollectionConnection;
   item: Item;
@@ -789,8 +816,6 @@ export type Query = {
   module: Module;
   modules?: Maybe<ModuleConnection>;
   node?: Maybe<Node>;
-  package: Package;
-  packages: PackageConnection;
   parameter: Parameter;
   parameters?: Maybe<ParameterConnection>;
   service: Service;
@@ -804,6 +829,17 @@ export type Query = {
 
 export type QueryAccountArgs = {
   id: Scalars['ID'];
+};
+
+
+export type QueryAssetArgs = {
+  id: Scalars['ID'];
+};
+
+
+export type QueryAssetsArgs = {
+  after?: InputMaybe<Scalars['String']>;
+  limit?: InputMaybe<Scalars['Int']>;
 };
 
 
@@ -853,17 +889,6 @@ export type QueryModulesArgs = {
 
 export type QueryNodeArgs = {
   id: Scalars['ID'];
-};
-
-
-export type QueryPackageArgs = {
-  id: Scalars['ID'];
-};
-
-
-export type QueryPackagesArgs = {
-  after?: InputMaybe<Scalars['String']>;
-  limit?: InputMaybe<Scalars['Int']>;
 };
 
 
@@ -977,6 +1002,16 @@ export type TriggerWorkflowPayload = {
   errors?: Maybe<Array<Maybe<WorkflowError>>>;
   result?: Maybe<Scalars['AWSJSON']>;
   status?: Maybe<WorkflowStatus>;
+};
+
+export type UpdateAssetInput = {
+  id: Scalars['ID'];
+  label?: InputMaybe<Scalars['String']>;
+};
+
+export type UpdateAssetPayload = {
+  __typename?: 'UpdateAssetPayload';
+  id?: Maybe<Scalars['ID']>;
 };
 
 export type UpdateCollectionInput = {
@@ -1367,6 +1402,8 @@ export type ResolversTypes = {
   AccessType: AccessType;
   Account: ResolverTypeWrapper<Account>;
   AccountUsage: ResolverTypeWrapper<AccountUsage>;
+  Asset: ResolverTypeWrapper<Asset>;
+  AssetConnection: ResolverTypeWrapper<AssetConnection>;
   BatchCreateItem: BatchCreateItem;
   BatchCreateItemsInput: BatchCreateItemsInput;
   BatchCreateItemsPayload: ResolverTypeWrapper<BatchCreateItemsPayload>;
@@ -1380,6 +1417,8 @@ export type ResolversTypes = {
   CollectionInsight: ResolverTypeWrapper<CollectionInsight>;
   CollectionInsightInterval: CollectionInsightInterval;
   CollectionUsage: ResolverTypeWrapper<CollectionUsage>;
+  CreateAssetInput: CreateAssetInput;
+  CreateAssetPayload: ResolverTypeWrapper<CreateAssetPayload>;
   CreateCollectionInput: CreateCollectionInput;
   CreateCollectionPayload: ResolverTypeWrapper<CreateCollectionPayload>;
   CreateItemInput: CreateItemInput;
@@ -1399,6 +1438,8 @@ export type ResolversTypes = {
   CreateWorkflowPayload: ResolverTypeWrapper<CreateWorkflowPayload>;
   DateRangeFilterInput: DateRangeFilterInput;
   DateTimeRangeFilterInput: DateTimeRangeFilterInput;
+  DeleteAssetInput: DeleteAssetInput;
+  DeleteAssetPayload: ResolverTypeWrapper<DeleteAssetPayload>;
   DeleteCollectionInput: DeleteCollectionInput;
   DeleteCollectionPayload: ResolverTypeWrapper<DeleteCollectionPayload>;
   DeleteItemInput: DeleteItemInput;
@@ -1443,7 +1484,7 @@ export type ResolversTypes = {
   ModuleConnection: ResolverTypeWrapper<ModuleConnection>;
   ModuleScope: ModuleScope;
   Mutation: ResolverTypeWrapper<{}>;
-  Node: ResolversTypes['Account'] | ResolversTypes['Module'] | ResolversTypes['Package'] | ResolversTypes['Parameter'] | ResolversTypes['Service'] | ResolversTypes['UserAccounts'] | ResolversTypes['Workflow'];
+  Node: ResolversTypes['Account'] | ResolversTypes['Asset'] | ResolversTypes['Module'] | ResolversTypes['Package'] | ResolversTypes['Parameter'] | ResolversTypes['Service'] | ResolversTypes['UserAccounts'] | ResolversTypes['Workflow'];
   Package: ResolverTypeWrapper<Package>;
   PackageConnection: ResolverTypeWrapper<PackageConnection>;
   PackageScope: PackageScope;
@@ -1460,6 +1501,8 @@ export type ResolversTypes = {
   TriggerMethod: TriggerMethod;
   TriggerWorkflowInput: TriggerWorkflowInput;
   TriggerWorkflowPayload: ResolverTypeWrapper<TriggerWorkflowPayload>;
+  UpdateAssetInput: UpdateAssetInput;
+  UpdateAssetPayload: ResolverTypeWrapper<UpdateAssetPayload>;
   UpdateCollectionInput: UpdateCollectionInput;
   UpdateCollectionPayload: ResolverTypeWrapper<UpdateCollectionPayload>;
   UpdateItemInput: UpdateItemInput;
@@ -1513,6 +1556,8 @@ export type ResolversParentTypes = {
   AWSURL: Scalars['AWSURL'];
   Account: Account;
   AccountUsage: AccountUsage;
+  Asset: Asset;
+  AssetConnection: AssetConnection;
   BatchCreateItem: BatchCreateItem;
   BatchCreateItemsInput: BatchCreateItemsInput;
   BatchCreateItemsPayload: BatchCreateItemsPayload;
@@ -1525,6 +1570,8 @@ export type ResolversParentTypes = {
   CollectionConnection: CollectionConnection;
   CollectionInsight: CollectionInsight;
   CollectionUsage: CollectionUsage;
+  CreateAssetInput: CreateAssetInput;
+  CreateAssetPayload: CreateAssetPayload;
   CreateCollectionInput: CreateCollectionInput;
   CreateCollectionPayload: CreateCollectionPayload;
   CreateItemInput: CreateItemInput;
@@ -1544,6 +1591,8 @@ export type ResolversParentTypes = {
   CreateWorkflowPayload: CreateWorkflowPayload;
   DateRangeFilterInput: DateRangeFilterInput;
   DateTimeRangeFilterInput: DateTimeRangeFilterInput;
+  DeleteAssetInput: DeleteAssetInput;
+  DeleteAssetPayload: DeleteAssetPayload;
   DeleteCollectionInput: DeleteCollectionInput;
   DeleteCollectionPayload: DeleteCollectionPayload;
   DeleteItemInput: DeleteItemInput;
@@ -1586,7 +1635,7 @@ export type ResolversParentTypes = {
   Module: Module;
   ModuleConnection: ModuleConnection;
   Mutation: {};
-  Node: ResolversParentTypes['Account'] | ResolversParentTypes['Module'] | ResolversParentTypes['Package'] | ResolversParentTypes['Parameter'] | ResolversParentTypes['Service'] | ResolversParentTypes['UserAccounts'] | ResolversParentTypes['Workflow'];
+  Node: ResolversParentTypes['Account'] | ResolversParentTypes['Asset'] | ResolversParentTypes['Module'] | ResolversParentTypes['Package'] | ResolversParentTypes['Parameter'] | ResolversParentTypes['Service'] | ResolversParentTypes['UserAccounts'] | ResolversParentTypes['Workflow'];
   Package: Package;
   PackageConnection: PackageConnection;
   Parameter: Parameter;
@@ -1601,6 +1650,8 @@ export type ResolversParentTypes = {
   Subscription: {};
   TriggerWorkflowInput: TriggerWorkflowInput;
   TriggerWorkflowPayload: TriggerWorkflowPayload;
+  UpdateAssetInput: UpdateAssetInput;
+  UpdateAssetPayload: UpdateAssetPayload;
   UpdateCollectionInput: UpdateCollectionInput;
   UpdateCollectionPayload: UpdateCollectionPayload;
   UpdateItemInput: UpdateItemInput;
@@ -1723,6 +1774,22 @@ export type AccountUsageResolvers<ContextType = any, ParentType extends Resolver
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
+export type AssetResolvers<ContextType = any, ParentType extends ResolversParentTypes['Asset'] = ResolversParentTypes['Asset']> = {
+  createdAt?: Resolver<Maybe<ResolversTypes['AWSDateTime']>, ParentType, ContextType>;
+  id?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
+  label?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  type?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  updatedAt?: Resolver<Maybe<ResolversTypes['AWSDateTime']>, ParentType, ContextType>;
+  url?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type AssetConnectionResolvers<ContextType = any, ParentType extends ResolversParentTypes['AssetConnection'] = ResolversParentTypes['AssetConnection']> = {
+  nextToken?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  nodes?: Resolver<Maybe<Array<Maybe<ResolversTypes['Asset']>>>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
 export type BatchCreateItemsPayloadResolvers<ContextType = any, ParentType extends ResolversParentTypes['BatchCreateItemsPayload'] = ResolversParentTypes['BatchCreateItemsPayload']> = {
   ids?: Resolver<Maybe<Array<Maybe<ResolversTypes['ID']>>>, ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
@@ -1771,6 +1838,13 @@ export type CollectionUsageResolvers<ContextType = any, ParentType extends Resol
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
+export type CreateAssetPayloadResolvers<ContextType = any, ParentType extends ResolversParentTypes['CreateAssetPayload'] = ResolversParentTypes['CreateAssetPayload']> = {
+  endpoint?: Resolver<Maybe<ResolversTypes['AWSURL']>, ParentType, ContextType>;
+  expiry?: Resolver<Maybe<ResolversTypes['Int']>, ParentType, ContextType>;
+  id?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
 export type CreateCollectionPayloadResolvers<ContextType = any, ParentType extends ResolversParentTypes['CreateCollectionPayload'] = ResolversParentTypes['CreateCollectionPayload']> = {
   id?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
@@ -1813,6 +1887,11 @@ export type CreateViewPayloadResolvers<ContextType = any, ParentType extends Res
 
 export type CreateWorkflowPayloadResolvers<ContextType = any, ParentType extends ResolversParentTypes['CreateWorkflowPayload'] = ResolversParentTypes['CreateWorkflowPayload']> = {
   id?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type DeleteAssetPayloadResolvers<ContextType = any, ParentType extends ResolversParentTypes['DeleteAssetPayload'] = ResolversParentTypes['DeleteAssetPayload']> = {
+  id?: Resolver<Maybe<ResolversTypes['ID']>, ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
@@ -1949,19 +2028,18 @@ export type ModuleConnectionResolvers<ContextType = any, ParentType extends Reso
 export type MutationResolvers<ContextType = any, ParentType extends ResolversParentTypes['Mutation'] = ResolversParentTypes['Mutation']> = {
   batchCreateItems?: Resolver<ResolversTypes['BatchCreateItemsPayload'], ParentType, ContextType, Partial<MutationBatchCreateItemsArgs>>;
   batchDeleteItems?: Resolver<ResolversTypes['BatchDeleteItemsPayload'], ParentType, ContextType, Partial<MutationBatchDeleteItemsArgs>>;
+  createAsset?: Resolver<ResolversTypes['CreateAssetPayload'], ParentType, ContextType, RequireFields<MutationCreateAssetArgs, 'input'>>;
   createCollection?: Resolver<ResolversTypes['CreateCollectionPayload'], ParentType, ContextType, RequireFields<MutationCreateCollectionArgs, 'input'>>;
   createItem?: Resolver<ResolversTypes['CreateItemPayload'], ParentType, ContextType, RequireFields<MutationCreateItemArgs, 'input'>>;
   createModule?: Resolver<ResolversTypes['CreateModulePayload'], ParentType, ContextType, RequireFields<MutationCreateModuleArgs, 'input'>>;
-  createPackage?: Resolver<ResolversTypes['CreatePackagePayload'], ParentType, ContextType, RequireFields<MutationCreatePackageArgs, 'input'>>;
-  createPackageFromService?: Resolver<ResolversTypes['CreatePackagePayload'], ParentType, ContextType, RequireFields<MutationCreatePackageFromServiceArgs, 'input'>>;
   createParameter?: Resolver<ResolversTypes['CreateParameterPayload'], ParentType, ContextType, RequireFields<MutationCreateParameterArgs, 'input'>>;
   createService?: Resolver<ResolversTypes['CreateServicePayload'], ParentType, ContextType, RequireFields<MutationCreateServiceArgs, 'input'>>;
   createView?: Resolver<ResolversTypes['CreateViewPayload'], ParentType, ContextType, RequireFields<MutationCreateViewArgs, 'input'>>;
   createWorkflow?: Resolver<Maybe<ResolversTypes['CreateWorkflowPayload']>, ParentType, ContextType, RequireFields<MutationCreateWorkflowArgs, 'input'>>;
+  deleteAsset?: Resolver<ResolversTypes['DeleteAssetPayload'], ParentType, ContextType, RequireFields<MutationDeleteAssetArgs, 'input'>>;
   deleteCollection?: Resolver<ResolversTypes['DeleteCollectionPayload'], ParentType, ContextType, RequireFields<MutationDeleteCollectionArgs, 'input'>>;
   deleteItem?: Resolver<ResolversTypes['DeleteItemPayload'], ParentType, ContextType, RequireFields<MutationDeleteItemArgs, 'input'>>;
   deleteModule?: Resolver<ResolversTypes['DeleteModulePayload'], ParentType, ContextType, RequireFields<MutationDeleteModuleArgs, 'input'>>;
-  deletePackage?: Resolver<ResolversTypes['DeletePackagePayload'], ParentType, ContextType, RequireFields<MutationDeletePackageArgs, 'input'>>;
   deleteParameter?: Resolver<ResolversTypes['DeleteParameterPayload'], ParentType, ContextType, RequireFields<MutationDeleteParameterArgs, 'input'>>;
   deleteService?: Resolver<ResolversTypes['DeleteServicePayload'], ParentType, ContextType, RequireFields<MutationDeleteServiceArgs, 'input'>>;
   deleteView?: Resolver<ResolversTypes['DeleteViewPayload'], ParentType, ContextType, RequireFields<MutationDeleteViewArgs, 'input'>>;
@@ -1971,23 +2049,22 @@ export type MutationResolvers<ContextType = any, ParentType extends ResolversPar
   invokeModule?: Resolver<ResolversTypes['InvokeModulePayload'], ParentType, ContextType, RequireFields<MutationInvokeModuleArgs, 'input'>>;
   setAccountAccess?: Resolver<ResolversTypes['SetAccountAccessPayload'], ParentType, ContextType, RequireFields<MutationSetAccountAccessArgs, 'input'>>;
   triggerWorkflow?: Resolver<Maybe<ResolversTypes['TriggerWorkflowPayload']>, ParentType, ContextType, RequireFields<MutationTriggerWorkflowArgs, 'input'>>;
+  updateAsset?: Resolver<ResolversTypes['UpdateAssetPayload'], ParentType, ContextType, RequireFields<MutationUpdateAssetArgs, 'input'>>;
   updateCollection?: Resolver<ResolversTypes['UpdateCollectionPayload'], ParentType, ContextType, RequireFields<MutationUpdateCollectionArgs, 'input'>>;
   updateItem?: Resolver<ResolversTypes['UpdateItemPayload'], ParentType, ContextType, RequireFields<MutationUpdateItemArgs, 'input'>>;
   updateModule?: Resolver<ResolversTypes['UpdateModulePayload'], ParentType, ContextType, RequireFields<MutationUpdateModuleArgs, 'input'>>;
-  updatePackage?: Resolver<ResolversTypes['UpdatePackagePayload'], ParentType, ContextType, RequireFields<MutationUpdatePackageArgs, 'input'>>;
   updateParameter?: Resolver<ResolversTypes['UpdateParameterPayload'], ParentType, ContextType, RequireFields<MutationUpdateParameterArgs, 'input'>>;
   updateService?: Resolver<ResolversTypes['UpdateServicePayload'], ParentType, ContextType, RequireFields<MutationUpdateServiceArgs, 'input'>>;
   updateView?: Resolver<ResolversTypes['UpdateViewPayload'], ParentType, ContextType, RequireFields<MutationUpdateViewArgs, 'input'>>;
   updateWorkflow?: Resolver<Maybe<ResolversTypes['UpdateWorkflowPayload']>, ParentType, ContextType, RequireFields<MutationUpdateWorkflowArgs, 'input'>>;
   validateCollection?: Resolver<ResolversTypes['ValidateCollectionPayload'], ParentType, ContextType, RequireFields<MutationValidateCollectionArgs, 'input'>>;
-  validatePackage?: Resolver<ResolversTypes['ValidatePackagePayload'], ParentType, ContextType, RequireFields<MutationValidatePackageArgs, 'input'>>;
   validateService?: Resolver<ResolversTypes['ValidateServicePayload'], ParentType, ContextType, RequireFields<MutationValidateServiceArgs, 'input'>>;
   validateView?: Resolver<ResolversTypes['ValidateViewPayload'], ParentType, ContextType, RequireFields<MutationValidateViewArgs, 'input'>>;
   validateWorkflow?: Resolver<ResolversTypes['ValidateWorkflowPayload'], ParentType, ContextType, RequireFields<MutationValidateWorkflowArgs, 'input'>>;
 };
 
 export type NodeResolvers<ContextType = any, ParentType extends ResolversParentTypes['Node'] = ResolversParentTypes['Node']> = {
-  __resolveType: TypeResolveFn<'Account' | 'Module' | 'Package' | 'Parameter' | 'Service' | 'UserAccounts' | 'Workflow', ParentType, ContextType>;
+  __resolveType: TypeResolveFn<'Account' | 'Asset' | 'Module' | 'Package' | 'Parameter' | 'Service' | 'UserAccounts' | 'Workflow', ParentType, ContextType>;
   id?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
 };
 
@@ -2028,6 +2105,8 @@ export type ParameterConnectionResolvers<ContextType = any, ParentType extends R
 
 export type QueryResolvers<ContextType = any, ParentType extends ResolversParentTypes['Query'] = ResolversParentTypes['Query']> = {
   account?: Resolver<Maybe<ResolversTypes['Account']>, ParentType, ContextType, RequireFields<QueryAccountArgs, 'id'>>;
+  asset?: Resolver<ResolversTypes['Asset'], ParentType, ContextType, RequireFields<QueryAssetArgs, 'id'>>;
+  assets?: Resolver<ResolversTypes['AssetConnection'], ParentType, ContextType, Partial<QueryAssetsArgs>>;
   collection?: Resolver<ResolversTypes['Collection'], ParentType, ContextType, RequireFields<QueryCollectionArgs, 'id'>>;
   collections?: Resolver<ResolversTypes['CollectionConnection'], ParentType, ContextType, Partial<QueryCollectionsArgs>>;
   item?: Resolver<ResolversTypes['Item'], ParentType, ContextType, RequireFields<QueryItemArgs, 'id'>>;
@@ -2037,8 +2116,6 @@ export type QueryResolvers<ContextType = any, ParentType extends ResolversParent
   module?: Resolver<ResolversTypes['Module'], ParentType, ContextType, RequireFields<QueryModuleArgs, 'id'>>;
   modules?: Resolver<Maybe<ResolversTypes['ModuleConnection']>, ParentType, ContextType, Partial<QueryModulesArgs>>;
   node?: Resolver<Maybe<ResolversTypes['Node']>, ParentType, ContextType, RequireFields<QueryNodeArgs, 'id'>>;
-  package?: Resolver<ResolversTypes['Package'], ParentType, ContextType, RequireFields<QueryPackageArgs, 'id'>>;
-  packages?: Resolver<ResolversTypes['PackageConnection'], ParentType, ContextType, Partial<QueryPackagesArgs>>;
   parameter?: Resolver<ResolversTypes['Parameter'], ParentType, ContextType, RequireFields<QueryParameterArgs, 'id'>>;
   parameters?: Resolver<Maybe<ResolversTypes['ParameterConnection']>, ParentType, ContextType, Partial<QueryParametersArgs>>;
   service?: Resolver<ResolversTypes['Service'], ParentType, ContextType, RequireFields<QueryServiceArgs, 'id'>>;
@@ -2081,6 +2158,11 @@ export type TriggerWorkflowPayloadResolvers<ContextType = any, ParentType extend
   errors?: Resolver<Maybe<Array<Maybe<ResolversTypes['WorkflowError']>>>, ParentType, ContextType>;
   result?: Resolver<Maybe<ResolversTypes['AWSJSON']>, ParentType, ContextType>;
   status?: Resolver<Maybe<ResolversTypes['WorkflowStatus']>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type UpdateAssetPayloadResolvers<ContextType = any, ParentType extends ResolversParentTypes['UpdateAssetPayload'] = ResolversParentTypes['UpdateAssetPayload']> = {
+  id?: Resolver<Maybe<ResolversTypes['ID']>, ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
@@ -2264,6 +2346,8 @@ export type Resolvers<ContextType = any> = {
   AWSURL?: GraphQLScalarType;
   Account?: AccountResolvers<ContextType>;
   AccountUsage?: AccountUsageResolvers<ContextType>;
+  Asset?: AssetResolvers<ContextType>;
+  AssetConnection?: AssetConnectionResolvers<ContextType>;
   BatchCreateItemsPayload?: BatchCreateItemsPayloadResolvers<ContextType>;
   BatchDeleteItemsPayload?: BatchDeleteItemsPayloadResolvers<ContextType>;
   BigInt?: GraphQLScalarType;
@@ -2271,6 +2355,7 @@ export type Resolvers<ContextType = any> = {
   CollectionConnection?: CollectionConnectionResolvers<ContextType>;
   CollectionInsight?: CollectionInsightResolvers<ContextType>;
   CollectionUsage?: CollectionUsageResolvers<ContextType>;
+  CreateAssetPayload?: CreateAssetPayloadResolvers<ContextType>;
   CreateCollectionPayload?: CreateCollectionPayloadResolvers<ContextType>;
   CreateItemPayload?: CreateItemPayloadResolvers<ContextType>;
   CreateModulePayload?: CreateModulePayloadResolvers<ContextType>;
@@ -2279,6 +2364,7 @@ export type Resolvers<ContextType = any> = {
   CreateServicePayload?: CreateServicePayloadResolvers<ContextType>;
   CreateViewPayload?: CreateViewPayloadResolvers<ContextType>;
   CreateWorkflowPayload?: CreateWorkflowPayloadResolvers<ContextType>;
+  DeleteAssetPayload?: DeleteAssetPayloadResolvers<ContextType>;
   DeleteCollectionPayload?: DeleteCollectionPayloadResolvers<ContextType>;
   DeleteItemPayload?: DeleteItemPayloadResolvers<ContextType>;
   DeleteModulePayload?: DeleteModulePayloadResolvers<ContextType>;
@@ -2311,6 +2397,7 @@ export type Resolvers<ContextType = any> = {
   SetAccountAccessPayload?: SetAccountAccessPayloadResolvers<ContextType>;
   Subscription?: SubscriptionResolvers<ContextType>;
   TriggerWorkflowPayload?: TriggerWorkflowPayloadResolvers<ContextType>;
+  UpdateAssetPayload?: UpdateAssetPayloadResolvers<ContextType>;
   UpdateCollectionPayload?: UpdateCollectionPayloadResolvers<ContextType>;
   UpdateItemPayload?: UpdateItemPayloadResolvers<ContextType>;
   UpdateModulePayload?: UpdateModulePayloadResolvers<ContextType>;
