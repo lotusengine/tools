@@ -61,9 +61,10 @@ export type Asset = Node & {
   createdAt?: Maybe<Scalars['AWSDateTime']>;
   id: Scalars['ID'];
   label?: Maybe<Scalars['String']>;
+  path?: Maybe<Scalars['String']>;
+  service: Service;
   type?: Maybe<Scalars['String']>;
   updatedAt?: Maybe<Scalars['AWSDateTime']>;
-  url?: Maybe<Scalars['String']>;
 };
 
 export type AssetConnection = {
@@ -199,9 +200,9 @@ export type CreateModuleInput = {
   events?: InputMaybe<Scalars['AWSJSON']>;
   label?: InputMaybe<Scalars['String']>;
   meta?: InputMaybe<MetaInput>;
+  options?: InputMaybe<Scalars['AWSJSON']>;
   repository?: InputMaybe<Scalars['String']>;
   scope?: InputMaybe<ModuleScope>;
-  settings?: InputMaybe<Scalars['AWSJSON']>;
   source?: InputMaybe<Scalars['String']>;
   summary?: InputMaybe<Scalars['String']>;
 };
@@ -524,9 +525,9 @@ export type Module = Node & {
   isActive?: Maybe<Scalars['Boolean']>;
   label?: Maybe<Scalars['String']>;
   meta?: Maybe<Meta>;
+  options?: Maybe<Scalars['AWSJSON']>;
   repository?: Maybe<Scalars['String']>;
   scope?: Maybe<ModuleScope>;
-  settings?: Maybe<Scalars['AWSJSON']>;
   source?: Maybe<Scalars['String']>;
   summary?: Maybe<Scalars['String']>;
   updatedAt?: Maybe<Scalars['AWSDateTime']>;
@@ -1048,9 +1049,9 @@ export type UpdateModuleInput = {
   id: Scalars['ID'];
   label?: InputMaybe<Scalars['String']>;
   meta?: InputMaybe<MetaInput>;
+  options?: InputMaybe<Scalars['AWSJSON']>;
   repository?: InputMaybe<Scalars['String']>;
   scope?: InputMaybe<ModuleScope>;
-  settings?: InputMaybe<Scalars['AWSJSON']>;
   source?: InputMaybe<Scalars['String']>;
   summary?: InputMaybe<Scalars['String']>;
 };
@@ -1778,9 +1779,10 @@ export type AssetResolvers<ContextType = any, ParentType extends ResolversParent
   createdAt?: Resolver<Maybe<ResolversTypes['AWSDateTime']>, ParentType, ContextType>;
   id?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
   label?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  path?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  service?: Resolver<ResolversTypes['Service'], ParentType, ContextType>;
   type?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
   updatedAt?: Resolver<Maybe<ResolversTypes['AWSDateTime']>, ParentType, ContextType>;
-  url?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
@@ -2010,9 +2012,9 @@ export type ModuleResolvers<ContextType = any, ParentType extends ResolversParen
   isActive?: Resolver<Maybe<ResolversTypes['Boolean']>, ParentType, ContextType>;
   label?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
   meta?: Resolver<Maybe<ResolversTypes['Meta']>, ParentType, ContextType>;
+  options?: Resolver<Maybe<ResolversTypes['AWSJSON']>, ParentType, ContextType>;
   repository?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
   scope?: Resolver<Maybe<ResolversTypes['ModuleScope']>, ParentType, ContextType>;
-  settings?: Resolver<Maybe<ResolversTypes['AWSJSON']>, ParentType, ContextType>;
   source?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
   summary?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
   updatedAt?: Resolver<Maybe<ResolversTypes['AWSDateTime']>, ParentType, ContextType>;
