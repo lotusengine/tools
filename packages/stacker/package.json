@@ -1,6 +1,6 @@
 {
   "name": "@lotusengine/stacker",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "description": "LotusEngine SDK",
   "keywords": [
     "typescript",
@@ -39,9 +39,9 @@
     "wipe": "rimraf dist"
   },
   "dependencies": {
-    "@lotusengine/core": "^1.0.23",
-    "@lotusengine/schemas": "^1.0.23",
-    "@lotusengine/types": "^1.0.35",
+    "@lotusengine/core": "^1.0.24",
+    "@lotusengine/schemas": "^1.0.24",
+    "@lotusengine/types": "^1.0.36",
     "fs-extra": "^10.0.0"
   },
   "engines": {
