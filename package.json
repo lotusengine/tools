@@ -13,6 +13,7 @@
     "lint": "eslint --ext=js,ts .",
     "nuke": "yarn clean && rimraf node_modules",
     "package": "lerna publish --conventional-commits",
+    "lerna": "lerna",
     "test": "jest",
     "test:watch": "jest --watch",
     "verify": "yarn lint && yarn build && yarn depcheck && yarn coverage && yarn bundle",
