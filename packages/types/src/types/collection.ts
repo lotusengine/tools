@@ -16,6 +16,10 @@ export type CollectionMappingFieldTypes = {
   integer: number
 }
 
+export enum CollectionProjectionType {
+  TEXT = 'text'
+}
+
 export type CollectionMappingFieldRequired = boolean
 
 export type CollectionMappingFieldParams =
@@ -61,6 +65,17 @@ export interface CollectionMapping {
   [key: string]: CollectionMappingParams
 }
 
+export interface CollectionProjection {
+  detail: Record<string, string>
+  list: Record<string, string>
+}
+
+export interface CollectionProjectionParams {
+  label: string
+  path: string
+  type: CollectionProjectionType
+}
+
 export interface CollectionTrigger {
   query: JSONQuery
   ttl?: number // How long before we allow repeat firing - seconds
@@ -93,6 +108,7 @@ export type CollectionModel = {
   summary?: string
   options: CollectionOptions
   mapping: CollectionMapping
+  projection?: CollectionProjection
   triggers: CollectionTriggers
   queries: CollectionQueries
 }
@@ -102,6 +118,7 @@ export type CollectionStackModel = {
   summary?: string
   options?: CollectionOptions
   mapping?: CollectionMapping
+  projection?: CollectionProjection
   triggers?: CollectionTriggers
   queries?: CollectionQueries
 }
@@ -115,6 +132,7 @@ export type CollectionStackInput = {
   summary?: string
   options?: JSONData
   mapping?: JSONData
+  projection?: JSONData
   triggers?: JSONData
   queries?: JSONData
 }
@@ -125,6 +143,7 @@ export type CollectionCreateInput = {
   summary?: string
   options?: CollectionOptions
   mapping?: CollectionMapping
+  projection?: CollectionProjection
   triggers?: CollectionTriggers
   queries?: CollectionQueries
 }
@@ -136,6 +155,7 @@ export type CollectionUpdateInput = {
   summary?: string
   options?: CollectionOptions
   mapping?: CollectionMapping
+  projection?: CollectionProjection
   triggers?: CollectionTriggers
   queries?: CollectionQueries
 }
@@ -147,6 +167,7 @@ export interface CollectionDeployInput {
   summary?: string
   options?: CollectionOptions
   mapping: CollectionMapping
+  projection?: CollectionProjection
   triggers: CollectionTriggers
   queries: CollectionQueries
 }
