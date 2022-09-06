@@ -66,8 +66,8 @@ export interface CollectionMapping {
 }
 
 export interface CollectionProjection {
-  detail: Record<string, string>
-  list: Record<string, string>
+  detail: CollectionProjectionParams
+  list: CollectionProjectionParams
 }
 
 export interface CollectionProjectionParams {
