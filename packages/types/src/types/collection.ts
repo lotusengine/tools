@@ -66,8 +66,8 @@ export interface CollectionMapping {
 }
 
 export interface CollectionProjection {
-  detail: CollectionProjectionParams
-  list: CollectionProjectionParams
+  detail?: CollectionProjectionParams
+  list?: CollectionProjectionParams
 }
 
 export interface CollectionProjectionParams {
