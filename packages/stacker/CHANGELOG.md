@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.25](https://github.com/lotusengine/stacker/compare/@lotusengine/stacker@1.0.24...@lotusengine/stacker@1.0.25) (2022-09-07)
+
+**Note:** Version bump only for package @lotusengine/stacker
+
+
+
+
+
 ## [1.0.24](https://github.com/lotusengine/stacker/compare/@lotusengine/stacker@1.0.23...@lotusengine/stacker@1.0.24) (2022-09-06)
 
 **Note:** Version bump only for package @lotusengine/stacker

@@ -1,6 +1,6 @@
 {
   "name": "@lotusengine/core",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "description": "LotusEngine core utilities",
   "keywords": [
     "typescript",
@@ -39,8 +39,8 @@
     "wipe": "rimraf dist"
   },
   "dependencies": {
-    "@lotusengine/schemas": "^1.0.24",
-    "@lotusengine/types": "^1.0.36",
+    "@lotusengine/schemas": "^1.0.25",
+    "@lotusengine/types": "^1.0.37",
     "ajv": "^8.6.3",
     "ajv-formats": "^2.1.1",
     "clean-deep": "^3.4.0",
