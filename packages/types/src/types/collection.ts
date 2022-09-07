@@ -17,7 +17,8 @@ export type CollectionMappingFieldTypes = {
 }
 
 export enum CollectionProjectionType {
-  TEXT = 'text'
+  TEXT = 'text',
+  BOOL = 'boolean'
 }
 
 export type CollectionMappingFieldRequired = boolean
@@ -66,14 +67,14 @@ export interface CollectionMapping {
 }
 
 export interface CollectionProjection {
-  list?: CollectionProjectionParams
-  detail?: CollectionProjectionParams
+  list?: Array<CollectionProjectionParams>
+  detail?: Array<CollectionProjectionParams>
 }
 
 export interface CollectionProjectionParams {
   label: string
   path: string
-  type: CollectionProjectionType
+  type?: CollectionProjectionType
 }
 
 export interface CollectionTrigger {
