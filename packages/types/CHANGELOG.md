@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.42](https://github.com/lotusengine/sdk/compare/@lotusengine/types@1.0.41...@lotusengine/types@1.0.42) (2022-10-01)
+
+**Note:** Version bump only for package @lotusengine/types
+
+
+
+
+
 ## [1.0.41](https://github.com/lotusengine/sdk/compare/@lotusengine/types@1.0.40...@lotusengine/types@1.0.41) (2022-10-01)
 
 **Note:** Version bump only for package @lotusengine/types
