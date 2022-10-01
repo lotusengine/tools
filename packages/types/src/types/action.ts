@@ -281,7 +281,7 @@ export interface SearchActionParameters {
   next?: ActionName
   result?: ParameterResultPath
   collection: UUID
-  query?: Record<string, unknown>
+  query: string
   limit?: number
 }
 

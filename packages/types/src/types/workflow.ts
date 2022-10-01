@@ -13,6 +13,7 @@ import {
   ReferrerActionParameters,
   RequestActionParameters,
   ReturnActionParameters,
+  SearchActionParameters,
   StoreActionParameters,
   ScriptActionParameters,
   SplitActionParameters,
@@ -21,6 +22,7 @@ import {
   TokenActionParameters,
   TransformActionParameters,
   WaitActionParameters,
+  ViewActionParameters,
   WorkflowRequest
 } from './action'
 import { ISO8601DateTime, JSONData, UUID } from './common'
@@ -85,14 +87,14 @@ export interface ReturnAction extends Action {
   parameters: ReturnActionParameters
 }
 
-export interface StoreAction extends Action {
-  type: `${ActionType.STORE}`
-  parameters: StoreActionParameters
-}
-
 export interface ScriptAction extends Action {
   type: `${ActionType.SCRIPT}`
   parameters: ScriptActionParameters
+}
+
+export interface SearchAction extends Action {
+  type: `${ActionType.SEARCH}`
+  parameters: SearchActionParameters
 }
 
 export interface SplitAction extends Action {
@@ -103,6 +105,11 @@ export interface SplitAction extends Action {
 export interface StartAction extends Action {
   type: `${ActionType.START}`
   parameters: StartActionParameters
+}
+
+export interface StoreAction extends Action {
+  type: `${ActionType.STORE}`
+  parameters: StoreActionParameters
 }
 
 export interface TemplateAction extends Action {
@@ -118,6 +125,11 @@ export interface TokenAction extends Action {
 export interface TransformAction extends Action {
   type: `${ActionType.TRANSFORM}`
   parameters: TransformActionParameters
+}
+
+export interface ViewAction extends Action {
+  type: `${ActionType.VIEW}`
+  parameters: ViewActionParameters
 }
 
 export interface WaitAction extends Action {
@@ -138,6 +150,7 @@ export type Actions =
   | ReferrerAction
   | RequestAction
   | ReturnAction
+  | SearchAction
   | StoreAction
   | ScriptAction
   | SplitAction
@@ -145,6 +158,7 @@ export type Actions =
   | TemplateAction
   | TokenAction
   | TransformAction
+  | ViewAction
   | WaitAction
 
 export interface WorkflowDefinition {
