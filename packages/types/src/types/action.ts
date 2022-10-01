@@ -124,6 +124,7 @@ export enum ActionType {
   REFERRER = 'referrer', // Block/allow access based on referer
   REQUEST = 'request', // Perform REST API requests
   RETURN = 'return', //  Async container return
+  SEARCH = 'search', // Search data in DB
   STORE = 'store', // Store data in DB
   SCRIPT = 'script', // Inline code
   SPLIT = 'split', // Split workflow
@@ -131,6 +132,7 @@ export enum ActionType {
   TEMPLATE = 'template', // Liquid template engine
   TOKEN = 'token', // Block/allow access based on token
   TRANSFORM = 'transform', // JSONata data transform
+  VIEW = 'view', // Output a composed view
   WAIT = 'wait' // Pause workflow
 }
 
@@ -169,6 +171,7 @@ export type ActionParametersMap = {
   referrer: ReferrerActionParameters
   request: RequestActionParameters
   return: ReturnActionParameters
+  search: SearchActionParameters
   store: StoreActionParameters
   script: ScriptActionParameters
   split: SplitActionParameters
@@ -176,6 +179,7 @@ export type ActionParametersMap = {
   template: TemplateActionParameters
   token: TokenActionParameters
   transform: TransformActionParameters
+  view: ViewActionParameters
   wait: WaitActionParameters
 }
 
@@ -273,6 +277,14 @@ export interface ReturnActionParameters {
   next?: ActionName
 }
 
+export interface SearchActionParameters {
+  next?: ActionName
+  result?: ParameterResultPath
+  collection: UUID
+  query?: Record<string, unknown>
+  limit?: number
+}
+
 export interface StoreActionParameters {
   next?: ActionName
   result?: ParameterResultPath
@@ -328,6 +340,10 @@ export interface TransformActionParameters {
   output?: ParameterOutputTransformation
 }
 
+export interface ViewActionParameters {
+  view: UUID
+  next?: ActionName
+}
 export interface WaitActionParameters {
   delay: number
   next?: ActionName
