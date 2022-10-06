@@ -162,7 +162,7 @@ export type Actions =
   | WaitAction
 
 export interface WorkflowDefinition {
-  [k: string]: Actions
+  [k: string]: Action
 }
 
 export type WorkflowModel = {
