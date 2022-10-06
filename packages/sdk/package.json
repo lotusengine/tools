@@ -1,6 +1,6 @@
 {
   "name": "@lotusengine/sdk",
-  "version": "1.0.30",
+  "version": "1.0.31",
   "description": "LotusEngine TypeScript SDK",
   "keywords": [
     "typescript",
@@ -34,9 +34,9 @@
     "wipe": "rimraf dist"
   },
   "dependencies": {
-    "@lotusengine/core": "^1.0.30",
-    "@lotusengine/schemas": "^1.0.30",
-    "@lotusengine/types": "^1.0.42",
+    "@lotusengine/core": "^1.0.31",
+    "@lotusengine/schemas": "^1.0.31",
+    "@lotusengine/types": "^1.0.43",
     "nanoid": "^3.1.25",
     "object-hash": "^2.2.0"
   },

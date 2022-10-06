@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.31](https://github.com/lotusengine/sdk/compare/@lotusengine/core@1.0.30...@lotusengine/core@1.0.31) (2022-10-06)
+
+**Note:** Version bump only for package @lotusengine/core
+
+
+
+
+
 ## [1.0.30](https://github.com/lotusengine/sdk/compare/@lotusengine/core@1.0.29...@lotusengine/core@1.0.30) (2022-10-01)
 
 **Note:** Version bump only for package @lotusengine/core
